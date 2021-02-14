@@ -9,7 +9,7 @@ module.exports = {
     sources: [{
             path: "./docs/index.html",
             collection: "files",
-            document_id: "",
+            document_id: "6029a260e979fb17407e25cd",
             key: "html",
             data:{
                 name: "Sendgrid Doc",
@@ -19,10 +19,10 @@ module.exports = {
    
     crud: [{
             collection: "routes",
-            document_id: "",
+            document_id: "6029a260e979fb17407e25cc",
             data:{
                 collection: "files",
-                document_id: "",
+                document_id: "6029a260e979fb17407e25cd",
                 name: "html",
                 domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
                 route: "/docs/sendgrid",
