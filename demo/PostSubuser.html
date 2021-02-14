@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Authenticate Domain</title>
+
+    <style type="text/css">
+        .template {
+            display: none
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Authenticated Domain</h1>
+
+    <form >
+        <input placeholder="username" data-sendgrid="postSubUser.username">
+        <input placeholder="email" data-sendgrid="postSubUser.email">
+        <input placeholder="password" data-sendgrid="postSubUser.password">
+        <input placeholder="ips" data-sendgrid="postSubUser.ips">
+        <button data-actions='postSubUser'>Add Sub User</button>
+    </form>
+
+    <script>
+        var config = {
+            apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+            securityKey: 'Bearer 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',
+            organization_Id: '5de0387b12e200ea63204d6c',
+            host: '52.203.210.252:8081'
+        }
+
+    </script>
+
+    <!--CoCreateJS-->
+    <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+
+    <!--CoCreate Plugins-->
+    <script src="https://server.cocreate.app/js/CoCreate-api.js"></script>
+    <script src="../src/CoCreate-sendgrid.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SendGrig</title>
+
+    <style type="text/css">
+        .template {
+            display: none
+        }
+
+        .list {
+            display: inline-grid;
+            grid-gap: 30px;
+            margin: 30px 50px;
+        }
+
+        .list>li {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>List of API - SendGrid</h1>
+
+    <div>
+        <ul class="list">
+            <li onclick="navigate('DomainAuthentication')">Go to SendGrid Domain Authentication</li>
+            <li onclick="navigate('GetAuthorizedDomain')">Go to SendGrid Get Authorized Domain</li>
+            <li onclick="navigate('SendEmail')">Go to SendGrid Send Email</li>
+            <li onclick="navigate('EmailValidation')">Go to SendGrid  Email Validation</li>
+            <li onclick="navigate('getEmailAddress')">Go to SendGrid Get Email Address</li>
+            <li onclick="navigate('SubUsers')">Go to SendGrid Sub Users</li>
+            <li onclick="navigate('PostSubuser')">Go to SendGrid Post Sub User</li>
+            <li onclick="navigate('getMarketingContacts')">Go to SendGrid Get Marketing Contacts</li>
+            <li onclick="navigate('postMarketingContact')">Go to SendGrid Post Marketing Contact</li>
+            <li onclick="navigate('getMarketingStats')">Go to SendGrid Get Marketing Stats</li>
+            <li onclick="navigate('getMarketingSinglesends')">Go to Get Marketing Single Sends</li>
+            
+    </div>
+
+</body>
+
+
+<script>
+    var config = {
+        apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+        securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+        organization_Id: '5de0387b12e200ea63204d6c',
+        host: '52.203.210.252:8081'
+    }
+
+    function navigate(name) {
+        window.location.href = `../demo/${name}.html`;
+    }
+
+</script>
+
+<!--CoCreateJS-->
+<script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+
+<!--CoCreate Plugins-->
+<script src="https://server.cocreate.app/js/CoCreate-api.js"></script>
+<script src="../src/CoCreate-sendgrid.js"></script>
+
+
+</html>

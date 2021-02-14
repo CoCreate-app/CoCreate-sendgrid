@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Authenticate Domain</title>
+
+  <style type="text/css">
+    .template {
+      display: none
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1> Marketing Campaign Contact </h1>
+
+  <form>
+    <!-- email, first_name, last_name, city, country, postal_code, address_line_1  -->
+    <input placeholder="email" data-sendgrid="postMarketingContact.email">
+    <input placeholder="first_name" data-sendgrid="postMarketingContact.first_name">
+    <input placeholder="last_name" data-sendgrid="postMarketingContact.last_name">
+    <input placeholder="address_line_1" data-sendgrid="postMarketingContact.address_line_1">
+    <input placeholder="city" data-sendgrid="postMarketingContact.city">
+    <input placeholder="country" data-sendgrid="postMarketingContact.country">
+    <input placeholder="postal_code" data-sendgrid="postMarketingContact.postal_code">
+
+    <button data-actions='postMarketingContact'>post Marketing Campaign Contact</button>
+  </form>
+
+  <script>
+    var config = {
+      apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+      securityKey: 'Bearer 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',
+      organization_Id: '5de0387b12e200ea63204d6c',
+      host: '52.203.210.252:8081'
+    }
+
+  </script>
+
+  <!--CoCreateJS-->
+  <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+
+  <!--CoCreate Plugins-->
+  <script src="https://server.cocreate.app/js/CoCreate-api.js"></script>
+  <script src="../src/CoCreate-sendgrid.js"></script>
+</body>
+
+</html>

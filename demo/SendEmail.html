@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SendGrid</title>
+
+  <style type="text/css">
+    .template {
+      display: none
+    }
+
+
+    form.form > div > label {
+        margin-right: 35px;
+    }
+    form.form > div {
+        margin: 29px;
+    }
+    
+    .btnsubmit {
+      border-radius: 10px;
+      font-size: 18px;
+      font-family: 'Cookie', cursive;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>SendGrid Send Email</h1>
+
+  <form class="form">
+         <div>
+              <label>to email :-</label>
+              <input type="email" placeholder="to email" data-sendgrid="sendEmail.to">
+         </div>
+      
+        <div>
+            <label>from email :-</label>
+            <input type="email" placeholder="from email" data-sendgrid="sendEmail.from" value="testing@cocreate.app">
+        </div>
+        
+        <div>
+            <label>subject :-</label>
+            <input type="text" placeholder="subject" data-sendgrid="sendEmail.subject">
+        </div>
+        
+        <div>
+          <label>html :-</label>
+        <textarea type="textarea" placeholder="html" data-sendgrid="sendEmail.html"></textarea/>
+        </div>
+        
+        <div>
+            <label>text :-</label>
+            <input type="text" placeholder="text" data-sendgrid="sendEmail.text">
+        </div>
+        
+        <button class="btnsubmit" data-actions='sendEmail'>SendGrid Send Email</button>
+  </form>
+
+  <div data-template_id="sendEmail">
+    <div class="template" data-value="{{data.result.id}}" data-render_array="data.result">
+        <h1>mail send sucess</h1>
+      <hr />
+    </div>
+  </div>
+
+
+  <script>
+    var config = {
+      apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+      securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+      organization_Id: '5de0387b12e200ea63204d6c',
+      //host: '52.203.210.252:8081'
+    }
+  </script>
+
+  <!--CoCreateJS-->
+  <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+
+  <!--CoCreate Plugins-->
+  <script src="https://server.cocreate.app/js/CoCreate-api.js"></script>
+  <script src="../src/CoCreate-sendgrid.js"></script>
+
+</body>
+
+</html>
