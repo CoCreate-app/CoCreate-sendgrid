@@ -1,4 +1,4 @@
-import api from '../../../CoCreate-components/CoCreate-api/src'
+import api from '@cocreate/api/src'
 import {socket, crud} from '../../../CoCreateJS/src';
 
 const CoCreateSendGrid = {
@@ -73,7 +73,7 @@ const CoCreateSendGrid = {
 	},
 }
 
-CoCreate.api.init({
+api.init({
 	name: CoCreateSendGrid.id, 
 	module:	CoCreateSendGrid
 });
