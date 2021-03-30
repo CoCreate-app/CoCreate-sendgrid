@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.1...v1.0.2) (2021-03-30)
+
+
+### Bug Fixes
+
+* cocreatejs from npm ([d39c013](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/d39c013ef5c4bff0aa8f5dd0ae62f22a38e551e9))
+
 ## [1.0.1](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.0...v1.0.1) (2021-03-29)
 
 
