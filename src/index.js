@@ -1,4 +1,4 @@
-import api from '@cocreate/api/src'
+import api from '@cocreate/api'
 
 const CoCreateSendGrid = {
 	id: 'sendgrid',
