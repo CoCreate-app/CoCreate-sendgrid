@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.2...v1.0.3) (2021-03-30)
+
+
+### Bug Fixes
+
+* import paths using npm ([6cb752c](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/6cb752ceb4e8de91f77fe7ebad658904434451b0))
+
 ## [1.0.2](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.1...v1.0.2) (2021-03-30)
 
 
