@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.3...v1.0.4) (2021-04-15)
+
+
+### Bug Fixes
+
+* update packages ([8c6164e](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/8c6164e5e07fa8103337d58ea88eaf65cdd6eb71))
+
 ## [1.0.3](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.2...v1.0.3) (2021-03-30)
 
 
