@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/sendgrid",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "description": "A simple sendgrid component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
   "keywords": [
     "sendgrid",
@@ -59,7 +59,6 @@
     "terser-webpack-plugin": "^5.1.1"
   },
   "dependencies": {
-    "@cocreate/api": "^1.0.0",
     "@cocreate/docs": "^1.0.3"
   }
 }
