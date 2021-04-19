@@ -1,3 +1,11 @@
+## [1.0.5](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.4...v1.0.5) (2021-04-19)
+
+
+### Bug Fixes
+
+* ci and build process ([c89c8b6](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/c89c8b6bf4c4f34726dd9082ecba1956978453ee))
+* npm publish and cdn deployment ([c8b77f3](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/c8b77f3ba4b371ac95c893ea7d9813bca25b8538))
+
 ## [1.0.3](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.2...v1.0.3) (2021-03-30)
 
 
