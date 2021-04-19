@@ -831,6 +831,14 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@cocreate/api@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@cocreate/api/-/api-1.0.5.tgz#c85cba838c1a79f08b221b78f9514b6044529f3d"
+  integrity sha512-CkMZ6WDaDt8Ssp6sTjzBINWlD8M/BRO/arVAMIx8EL2nGAwRrdNZyilRmEsH0U55eYc9GwXSTw0SlFY7pduTnw==
+  dependencies:
+    "@cocreate/docs" "^1.0.3"
+    mini-css-extract-plugin "^1.5.0"
+
 "@cocreate/docs@^1.0.3":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@cocreate/docs/-/docs-1.1.2.tgz#3ed93927574e400d2a832651f6d3c32f46ab38b3"
