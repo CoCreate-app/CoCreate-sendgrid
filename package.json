@@ -51,6 +51,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.5.0"
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.1.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
@@ -60,10 +61,10 @@
   },
   "dependencies": {
     "@cocreate/action": "^1.1.2",
-    "@cocreate/api": "^1.0.5",
+    "@cocreate/api": "^1.0.7",
     "@cocreate/docs": "^1.0.3",
     "@cocreate/render": "^1.0.2",
     "@cocreate/socket-client": "^1.0.4",
-    "mini-css-extract-plugin": "^1.5.0"
+    "@sendgrid/mail": "^7.4.2",
   }
 }
