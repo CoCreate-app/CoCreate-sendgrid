@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.8...v1.0.9) (2021-04-23)
+
+
+### Bug Fixes
+
+* readme and documentation. Removed securitykeys ([961d748](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/961d74851a6f4de4f2dbe8fb3c96cf3b455a01b8))
+
 ## [1.0.8](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.7...v1.0.8) (2021-04-23)
 
 
