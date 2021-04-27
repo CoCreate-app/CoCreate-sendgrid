@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.10...v1.0.11) (2021-04-27)
+
+
+### Bug Fixes
+
+* add host in docs ([77fc2e6](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/77fc2e6aca829c5bba6b39419f49f5ce7a3c853c))
+
 ## [1.0.10](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.9...v1.0.10) (2021-04-27)
 
 
