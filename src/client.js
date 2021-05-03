@@ -77,4 +77,4 @@ api.init({
 	module:	CoCreateSendGrid
 });
 
-export default CoCreateSendgrid;
+export default CoCreateSendGrid;

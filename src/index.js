@@ -1,6 +1,6 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
-        define(["./client"], function(CoCreateSendgrid) {
+        define(["./client.js"], function(CoCreateSendgrid) {
         	return factory(CoCreateSendgrid)
         });
     } else if (typeof module === 'object' && module.exports) {
