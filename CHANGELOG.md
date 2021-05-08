@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.11...v1.0.12) (2021-05-08)
+
+
+### Bug Fixes
+
+* add css auto parse and save to docs. ([0fa4469](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/0fa4469965322a52c91d0733c62280c922b1d05f))
+
 ## [1.0.11](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.10...v1.0.11) (2021-04-27)
 
 
