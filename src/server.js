@@ -109,7 +109,8 @@ class CoCreateSendGrid {
   async sendEmail(socket, type, params) {
     try {
       const { to, from , subject, html } = params
-     let text=(typeof params['text'] == 'undefined') ? 'Cocreate' :  params['text'];
+      console.log("Console ",typeof params['text'])
+     let text=(typeof params['text'] == 'undefined' ||  params['text'] == '' ) ? 'Cocreate' :  params['text'];
 		const msg = {
 		  to,
 		  from,
