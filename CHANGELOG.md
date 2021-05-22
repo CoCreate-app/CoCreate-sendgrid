@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.12...v1.0.13) (2021-05-22)
+
+
+### Bug Fixes
+
+* ReadME ([affab0e](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/affab0ec6306efdc912103a4046f8bdee56fa9af))
+
 ## [1.0.12](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.11...v1.0.12) (2021-05-08)
 
 
