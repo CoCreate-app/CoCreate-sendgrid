@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.13...v1.0.14) (2021-06-06)
+
+
+### Bug Fixes
+
+* update packages, add uuid, add data-parse to demos ([c7e367a](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/c7e367a7ab19dea965452999388456fdbcab2d85))
+
 ## [1.0.13](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.12...v1.0.13) (2021-05-22)
 
 
