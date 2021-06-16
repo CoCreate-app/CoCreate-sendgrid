@@ -17,7 +17,6 @@ class CoCreateSendGrid {
 
   init() {
     if (this.wsManager) {
-      //this.wsManager.on(this.module_id, (socket, data) => this.sendSendGrid(socket, data));
       this.wsManager.on(this.module_id,		(socket, data, roomInfo) => this.sendSendGrid(socket, data, roomInfo));
     }
   }
