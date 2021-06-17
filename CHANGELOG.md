@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.14...v1.0.15) (2021-06-16)
+
+
+### Bug Fixes
+
+* added header for seo ([fe9c393](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/fe9c393421eb8a386c229ac1b68f518d3d16fc39))
+
 ## [1.0.14](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.13...v1.0.14) (2021-06-06)
 
 
