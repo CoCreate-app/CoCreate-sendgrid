@@ -2,10 +2,12 @@
 
 A simple sendgrid component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API. Take it for a spin in our [playground!](https://cocreate.app/docs/sendgrid)
 
-![GitHub file size in bytes](https://img.shields.io/github/size/CoCreate-app/CoCreate-sendgrid/dist/CoCreate-sendgrid.min.js?label=minified%20size&style=for-the-badge)
-![GitHub latest release](https://img.shields.io/github/v/release/CoCreate-app/CoCreate-sendgrid?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/CoCreate-app/CoCreate-sendgrid?style=for-the-badge)
-![GitHub labels](https://img.shields.io/github/labels/CoCreate-app/CoCreate-sendgrid/help%20wanted?style=for-the-badge)
+![minified](https://img.badgesize.io/https://cdn.cocreate.app/sendgrid/latest/CoCreate-sendgrid.min.js?style=flat-square&label=minified&color=orange)
+![gzip](https://img.badgesize.io/https://cdn.cocreate.app/sendgrid/latest/CoCreate-sendgrid.min.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
+![brotli](https://img.badgesize.io/https://cdn.cocreate.app/sendgrid/latest/CoCreate-sendgrid.min.js?compression=brotli&style=flat-square&label=brotli)
+![GitHub latest release](https://img.shields.io/github/v/release/CoCreate-app/CoCreate-sendgrid?style=flat-square)
+![License](https://img.shields.io/github/license/CoCreate-app/CoCreate-sendgrid?style=flat-square)
+![Hiring](https://img.shields.io/static/v1?style=flat-square&label=&message=Hiring&color=blueviolet)
 
 ![CoCreate-sendgrid](https://cdn.cocreate.app/docs/CoCreate-sendgrid.gif)
 
@@ -19,11 +21,20 @@ For a complete guide and working demo refer to the [doumentation](https://cocrea
 <script src="https://cdn.cocreate.app/sendgrid/latest/CoCreate-sendgrid.min.js"></script>
 ```
 
+```html
+<script src="https://cdn.cocreate.app/sendgrid/latest/CoCreate-sendgrid.min.css"></script>
+```
 
 ## NPM
 
 ```shell
 $ npm i @cocreate/sendgrid
+```
+
+## yarn
+
+```shell
+$ yarn install @cocreate/sendgrid
 ```
 
 # Table of Contents
