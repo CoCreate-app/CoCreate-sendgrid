@@ -1,3 +1,11 @@
+## [1.0.22](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.21...v1.0.22) (2021-07-13)
+
+
+### Bug Fixes
+
+* add yarn lockfile to git ignore ([91a6b2d](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/91a6b2d730069e34b8342f4897c59410defc735c))
+* remove yarn.lock ([320e4f8](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/320e4f8955a29bdcf745fd1960660191cbeac033))
+
 ## [1.0.21](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.20...v1.0.21) (2021-07-10)
 
 
