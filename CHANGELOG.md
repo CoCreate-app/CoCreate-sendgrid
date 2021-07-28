@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.24...v1.1.0) (2021-07-28)
+
+
+### Bug Fixes
+
+* remove data- from fetch, pass and filter ([df63676](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/df63676a3955f3059af8b5e5d308fd61516262e0))
+
+
+### Features
+
+* add new is{attribute} system and remove data- from attributtes ([2cf47ab](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/2cf47ab4e510c24ff0e9db29d59dda53f6760ff2))
+
 ## [1.0.24](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.23...v1.0.24) (2021-07-17)
 
 
