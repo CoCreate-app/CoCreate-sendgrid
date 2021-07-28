@@ -42,12 +42,12 @@
     <h1>SendGrig Sub Users</h1>
 
     <form>
-        <button class="btnsubmit" data-actions='getSubUsersList'>Get Sub Users list</button>
+        <button class="btnsubmit" actions='getSubUsersList'>Get Sub Users list</button>
     </form>
 
-    <div data-template_id="sendgridDomainList">
+    <div template_id="sendgridDomainList">
         <h4>Authenticated Domain List :- </h4>
-        <div class="template" data-value="{{data.id}}" data-render_array="data">
+        <div class="template" data-value="{{data.id}}" render-array="data">
             <div class="display-block">
                 <div>
                     name : - <h3 value="{{data.domain}}"></h3>

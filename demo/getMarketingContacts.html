@@ -35,12 +35,12 @@
   <h1>Get Marketing Contacts </h1>
 
   <form>
-    <button class="btnsubmit" data-actions='getMarketingContacts'>Get Marketing Contacts</button>
+    <button class="btnsubmit" actions='getMarketingContacts'>Get Marketing Contacts</button>
   </form>
 
-  <div data-template_id="getMarketingContacts">
+  <div template_id="getMarketingContacts">
     <h4>Authenticated Domain List :- </h4>
-    <div class="template" data-value="{{data.result.id}}" data-render_array="data.result">
+    <div class="template" data-value="{{data.result.id}}" render-array="data.result">
       <div class="display-block">
           email : - <h4 value="{{data.result.email}}"></h4>
           id :- <h4 value={{data.result.id}}></h4>

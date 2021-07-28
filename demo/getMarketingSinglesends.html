@@ -35,12 +35,12 @@
   <h1>Get Marketing Stats </h1>
 
   <form>
-    <button class="btnsubmit" data-actions='getMarketingSinglesends'>Get Marketing Stats</button>
+    <button class="btnsubmit" actions='getMarketingSinglesends'>Get Marketing Stats</button>
   </form>
 
-  <div data-template_id="getMarketingSinglesends">
+  <div template_id="getMarketingSinglesends">
     <h4>Authenticated Domain List :- </h4>
-    <div class="template" data-value="{{data.results.id}}" data-render_array="data.results">
+    <div class="template" data-value="{{data.results.id}}" render-array="data.results">
       <div class="display-block">
           id :- <h4 value={{data.results.id}}></h4>
           requests : - <h4 value="{{data.results.stats.requests}}"></h4>

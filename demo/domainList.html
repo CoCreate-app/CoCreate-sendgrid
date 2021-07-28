@@ -42,7 +42,7 @@
   <h1>domainList</h1>
 
   <form>
-    <button data-actions='domainList'>Get Authenticated Domain list</button>
+    <button actions='domainList'>Get Authenticated Domain list</button>
   </form>
 
   <br />
@@ -50,12 +50,12 @@
     <input placeholder="link_id" data-sendgrid="sendDNSEmail.link_id">
     <input placeholder="domain_id" data-sendgrid="sendDNSEmail.domain_id">
     <input placeholder="email" data-sendgrid="sendDNSEmail.email">
-    <button data-actions='sendDNSEmail'>send DNS mail Domain</button>
+    <button actions='sendDNSEmail'>send DNS mail Domain</button>
   </form>
 
-  <div data-template_id="domainList">
+  <div template_id="domainList">
     <h4>Authenticated Domain List :- </h4>
-    <div class="template" data-value="{{data.id}}" data-render_array="data">
+    <div class="template" data-value="{{data.id}}" render-array="data">
       <div class="display-block">
         <div>
           name : - <h3 value="{{data.domain}}"></h3>

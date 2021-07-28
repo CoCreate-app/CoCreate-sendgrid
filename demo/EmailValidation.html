@@ -36,12 +36,12 @@
 
   <form>
     <input type="email" placeholder="email" data-sendgrid="EmailValidation.email">
-    <button class="btnsubmit" data-actions='EmailValidation'>Email Validation</button>
+    <button class="btnsubmit" actions='EmailValidation'>Email Validation</button>
   </form>
 
-  <div data-template_id="EmailValidation">
+  <div template_id="EmailValidation">
     <h4>Authenticated Domain List :- </h4>
-    <div class="template" data-value="{{data.result.id}}" data-render_array="data.result">
+    <div class="template" data-value="{{data.result.id}}" render-array="data.result">
 
       <hr />
     </div>
