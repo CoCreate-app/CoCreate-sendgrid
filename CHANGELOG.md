@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.0...v1.1.1) (2021-08-02)
+
+
+### Bug Fixes
+
+* remove data- from attributes ([65a4c33](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/65a4c335056a4cb4d5f882a3d242fe9f446a02e4))
+* update data-fullscreen to fullscreen ([f1262ba](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/f1262ba19c4e27783e3db649a1001af8bdf196eb))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.0.24...v1.1.0) (2021-07-28)
 
 
