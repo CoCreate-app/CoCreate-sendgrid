@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.4...v1.1.5) (2021-08-22)
+
+
+### Bug Fixes
+
+* removed data- from main-content, clone, filter-value_type ([bae75cd](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/bae75cd09a1100a0efe11bf910716bfd8fbac30f))
+
 ## [1.1.4](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.3...v1.1.4) (2021-08-22)
 
 
