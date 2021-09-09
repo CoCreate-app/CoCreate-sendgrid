@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.10...v1.1.11) (2021-09-09)
+
+
+### Bug Fixes
+
+* CoCreate.config directory, path, name and  public ([1f867c3](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/1f867c38e32c57d910ce0b616aa6ee0812ff6c86))
+
 ## [1.1.10](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.9...v1.1.10) (2021-09-08)
 
 
