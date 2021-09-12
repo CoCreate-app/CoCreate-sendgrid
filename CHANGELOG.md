@@ -1,3 +1,10 @@
+## [1.1.15](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.14...v1.1.15) (2021-09-12)
+
+
+### Bug Fixes
+
+* update sidenav to use resize and toggle ([2e51624](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/2e51624e8eb000b841dd3926c03f08b61cfd90f6))
+
 ## [1.1.14](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.13...v1.1.14) (2021-09-09)
 
 
