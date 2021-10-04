@@ -60,11 +60,11 @@
     "webpack-log": "^3.0.1"
   },
   "dependencies": {
-    "@cocreate/action": "^1.2.21",
-    "@cocreate/api": "^1.1.20",
-    "@cocreate/docs": "^1.2.25",
-    "@cocreate/render": "^1.1.20",
-    "@cocreate/socket-client": "^1.2.23",
+    "@cocreate/action": "^1.2.23",
+    "@cocreate/api": "^1.1.21",
+    "@cocreate/docs": "^1.2.26",
+    "@cocreate/render": "^1.1.21",
+    "@cocreate/socket-client": "^1.2.24",
     "@sendgrid/mail": "^7.4.2"
   }
 }
