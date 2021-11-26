@@ -1,3 +1,10 @@
+## [1.1.47](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.46...v1.1.47) (2021-11-26)
+
+
+### Bug Fixes
+
+* docs sidenav width ([01ea5ae](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/01ea5ae922b472091a32a3de21708f6ad2959483))
+
 ## [1.1.46](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.45...v1.1.46) (2021-11-26)
 
 
