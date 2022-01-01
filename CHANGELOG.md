@@ -1,3 +1,10 @@
+## [1.1.54](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.53...v1.1.54) (2022-01-01)
+
+
+### Bug Fixes
+
+* get-value attribute value now supports a selector added # to all values currently in get-value attributes ([97b9691](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/97b9691e54cade6ebf8740780a6511fbe49cabd6))
+
 ## [1.1.53](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.52...v1.1.53) (2022-01-01)
 
 
