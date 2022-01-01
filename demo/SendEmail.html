@@ -34,34 +34,34 @@
   <form class="form">
          <div>
               <label>to email :-</label>
-              <input type="email" placeholder="to email" data-sendgrid="sendEmail.to">
+              <input type="email" placeholder="to email" sendgrid="sendEmail.to">
          </div>
       
         <div>
             <label>from email :-</label>
-            <input autocomplete="false" type="email" placeholder="from email" data-sendgrid="sendEmail.from" value="testing@cocreate.app">
+            <input autocomplete="false" type="email" placeholder="from email" sendgrid="sendEmail.from" value="testing@cocreate.app">
         </div>
         
         <div>
             <label>subject :-</label>
-            <input type="text" placeholder="subject" data-sendgrid="sendEmail.subject">
+            <input type="text" placeholder="subject" sendgrid="sendEmail.subject">
         </div>
         
         <div>
           <label>html :-</label>
-        <textarea type="textarea" placeholder="html" data-sendgrid="sendEmail.html"></textarea/>
+        <textarea type="textarea" placeholder="html" sendgrid="sendEmail.html"></textarea/>
         </div>
         
         <div>
             <label>text :-</label>
-            <input type="text" placeholder="text" data-sendgrid="sendEmail.text">
+            <input type="text" placeholder="text" sendgrid="sendEmail.text">
         </div>
         
         <button class="btnsubmit" actions='sendEmail'>SendGrid Send Email</button>
   </form>
 
   <div template_id="sendEmail">
-    <div class="template" data-value="{{data.result.id}}" render-array="data.result">
+    <div class="template" value="{{data.result.id}}" render-array="data.result">
         <h1>mail send sucess</h1>
       <hr />
     </div>

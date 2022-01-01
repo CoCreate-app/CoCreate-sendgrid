@@ -17,13 +17,13 @@
   <h1>domainAuthentication</h1>
 
   <form>
-    <input data-sendgrid="domainAuthenticate.domain_name">
+    <input sendgrid="domainAuthenticate.domain_name">
     <button actions='domainAuthenticate'>do</button>
   </form>
   
   <div template_id="domainAuthenticate">
           <h4>List recordings:- </h4>
-          <div class="template margin:10px;"   data-value="{{data.id}}" render-array="data" >
+          <div class="template margin:10px;"   value="{{data.id}}" render-array="data" >
             <li > subdomain <span  value="{{data.subdomain}}" ></span></li>
             
             DKIM1

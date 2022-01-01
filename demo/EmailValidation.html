@@ -35,13 +35,13 @@
   <h1>Email Validation</h1>
 
   <form>
-    <input type="email" placeholder="email" data-sendgrid="EmailValidation.email">
+    <input type="email" placeholder="email" sendgrid="EmailValidation.email">
     <button class="btnsubmit" actions='EmailValidation'>Email Validation</button>
   </form>
 
   <div template_id="EmailValidation">
     <h4>Authenticated Domain List :- </h4>
-    <div class="template" data-value="{{data.result.id}}" render-array="data.result">
+    <div class="template" value="{{data.result.id}}" render-array="data.result">
 
       <hr />
     </div>
