@@ -1,3 +1,10 @@
+## [1.1.55](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.54...v1.1.55) (2022-02-01)
+
+
+### Bug Fixes
+
+* update dependency versions ([39f603e](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/39f603e4d3c3181fb98e7f4b4fc76bdd1754e73c))
+
 ## [1.1.54](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.53...v1.1.54) (2022-01-01)
 
 
