@@ -1,3 +1,10 @@
+## [1.1.56](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.55...v1.1.56) (2022-02-03)
+
+
+### Bug Fixes
+
+* replaced show and hide class hidden with attribute hidden ([5bd0fe2](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/5bd0fe285697c363b9bd906bec6a7df357946f82))
+
 ## [1.1.55](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.54...v1.1.55) (2022-02-01)
 
 
