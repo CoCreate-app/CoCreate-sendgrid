@@ -37,80 +37,69 @@
 
 </head>
 
-<body>
+  <body>
 
-  <h1>domainList</h1>
+    <h1>domainList</h1>
 
-  <form>
-    <button actions='domainList'>Get Authenticated Domain list</button>
-  </form>
+    <form>
+      <button actions='domainList'>Get Authenticated Domain list</button>
+    </form>
 
-  <br />
-  <form style="margin: 1em 0em;">
-    <input placeholder="link_id" sendgrid="sendDNSEmail.link_id">
-    <input placeholder="domain_id" sendgrid="sendDNSEmail.domain_id">
-    <input placeholder="email" sendgrid="sendDNSEmail.email">
-    <button actions='sendDNSEmail'>send DNS mail Domain</button>
-  </form>
+    <br />
+    <form style="margin: 1em 0em;">
+      <input placeholder="link_id" sendgrid="sendDNSEmail.link_id">
+      <input placeholder="domain_id" sendgrid="sendDNSEmail.domain_id">
+      <input placeholder="email" sendgrid="sendDNSEmail.email">
+      <button actions='sendDNSEmail'>send DNS mail Domain</button>
+    </form>
 
-  <div template_id="domainList">
-    <h4>Authenticated Domain List :- </h4>
-    <div class="template" value="{{data.id}}" render-array="data">
-      <div class="display-block">
-        <div>
-          name : - <h3 value="{{data.domain}}"></h3>
-        </div>
-        <div>
-          username : - <h4 value="{{data.username}}"></h4>
-        </div>
-        <div>
-          subdomain : - <h4 value="{{data.subdomain}}"></h4>
-        </div>
+    <div template_id="domainList">
+      <h4>Authenticated Domain List :- </h4>
+      <div class="template" value="{{data.id}}" render-array="data">
+        <div class="display-block">
+          <div>
+            name : - <h3>{{data.domain}}</h3>
+          </div>
+          <div>
+            username : - <h4 value="{{data.username}}"></h4>
+          </div>
+          <div>
+            subdomain : - <h4 value="{{data.subdomain}}"></h4>
+          </div>
 
-        <div style="flex: 1 100%;">
-          <label value="type :- {{data.dns.dkim1.type}}">type</label>
-          <label style="margin-left: 10px;">dkim1 host: -</label>
-          <input class="input_width" value="{{data.dns.dkim1.host}}" />
-          <label>dkim1 data: -</label>
-          <input class="input_width" value="{{data.dns.dkim1.data}}" />
+          <div style="flex: 1 100%;">
+            <label value="type :- {{data.dns.dkim1.type}}">type</label>
+            <label style="margin-left: 10px;">dkim1 host: -</label>
+            <input class="input_width" value="{{data.dns.dkim1.host}}" />
+            <label>dkim1 data: -</label>
+            <input class="input_width" value="{{data.dns.dkim1.data}}" />
+          </div>
+          <div style="flex: 1 100%;">
+            <label value="type :- {{data.dns.dkim2.type}}">type</label>
+            <label style="margin-left: 10px;">dkim2 host: -</label>
+            <input class="input_width" value="{{data.dns.dkim2.host}}" />
+            <label>dkim2 data: -</label>
+            <input class="input_width" value="{{data.dns.dkim2.data}}" />
+          </div>
+          <div style="flex: 1 100%;">
+            <label value="type :- {{data.dns.mail_cname.type}}">type</label>
+            <label style="margin-left: 10px;">mail_cname host: -</label>
+            <input class="input_width" value="{{data.dns.mail_cname.host}}" />
+            <label>mail_cname data: -</label>
+            <input class="input_width" value="{{data.dns.mail_cname.data}}" />
+          </div>
         </div>
-        <div style="flex: 1 100%;">
-          <label value="type :- {{data.dns.dkim2.type}}">type</label>
-          <label style="margin-left: 10px;">dkim2 host: -</label>
-          <input class="input_width" value="{{data.dns.dkim2.host}}" />
-          <label>dkim2 data: -</label>
-          <input class="input_width" value="{{data.dns.dkim2.data}}" />
-        </div>
-        <div style="flex: 1 100%;">
-          <label value="type :- {{data.dns.mail_cname.type}}">type</label>
-          <label style="margin-left: 10px;">mail_cname host: -</label>
-          <input class="input_width" value="{{data.dns.mail_cname.host}}" />
-          <label>mail_cname data: -</label>
-          <input class="input_width" value="{{data.dns.mail_cname.data}}" />
-        </div>
+        <hr />
       </div>
-      <hr />
     </div>
-  </div>
-
-
-        <script>
-            var config = {
-                apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
-                organization_Id: '5de0387b12e200ea63204d6c',
-            
-            }
-        </script>
-        
      
-<!--CoCreateJS-->
-    <script src="https://server.cocreate.app/CoCreateJS/dist/CoCreate.js"></script>
-    
+    <!--CoCreateJS-->
+    <script src="http://127.0.0.1:4000/CoCreateJS/dist/CoCreate.js"></script>
 
-<!--CoCreate Plugins-->
 
-        <!--<script src="../dist/CoCreate-sendgrid.js"></script>-->
-        -->
-    </body>
+    <!--CoCreate Plugins-->
+    <!--<script src="../dist/CoCreate-sendgrid.js"></script>-->
+      
+  </body>
         
 </html>

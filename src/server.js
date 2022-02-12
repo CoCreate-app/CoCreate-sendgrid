@@ -17,34 +17,32 @@ class CoCreateSendGrid {
 
   init() {
     if (this.wsManager) {
-      this.wsManager.on(this.module_id,		(socket, data, roomInfo) => this.sendSendGrid(socket, data, roomInfo));
+      this.wsManager.on(this.module_id, (socket, data, roomInfo) => this.sendSendGrid(socket, data, roomInfo));
     }
   }
 
-  async sendSendGrid(socket, data,roomInfo) {
-    console.log("Data sengrid ",data)
+  async sendSendGrid(socket, data, roomInfo) {
+    console.log("Data sengrid ", data)
     const type = data['type'];
     let params = data['data'];
     const module_id = this.module_id;
-    
-    	 // connect api
-  	 try{
-  	       let enviroment = typeof params['enviroment'] != 'undefined' ? params['enviroment'] : this.enviroment;
-           let org_row = await api.getOrg(params,this.module_id);
-           this.apiKey = org_row['apis.'+this.module_id+'.'+enviroment+'.apiKey'];
-           this.apiKeyMail = org_row['apis.'+this.module_id+'.'+enviroment+'.apiKeyMail'];
-           console.log("API sengrid ",this.apiKeyMail)
-           sgMail.setApiKey(this.apiKeyMail);
-  	 }catch(e){
-  	   	console.log(this.module_id+" : Error Connect to api",e)
-  	   	return false;
-  	 }
-  
-		
-		
-		/// WE NEED APIKEY IN ALL METHODS, BUT APIKEY IS ON SOCKET LISTEN
-		//vars asign by jeanmendoza 13_abril_2021 params = params["data"];
-		params = params["data"];
+
+    // connect api
+    try {
+      let enviroment = typeof params['enviroment'] != 'undefined' ? params['enviroment'] : this.enviroment;
+      let org = await api.getOrg(params, this.module_id);
+      this.apiKey = org['apis.' + this.module_id + '.' + enviroment + '.apiKey'];
+      this.apiKeyMail = org['apis.' + this.module_id + '.' + enviroment + '.apiKeyMail'];
+      if(this.apiKeyMail)
+        sgMail.setApiKey(this.apiKeyMail);
+    } catch (e) {
+      console.log(this.module_id + " : Error Connect to api", e)
+      return false;
+    }
+
+    /// WE NEED APIKEY IN ALL METHODS, BUT APIKEY IS ON SOCKET LISTEN
+    //vars asign by jeanmendoza 13_abril_2021 params = params["data"];
+    params = params["data"];
     switch (type) {
       case 'sendEmail':
         await this.sendEmail(socket, type, params);
@@ -57,11 +55,11 @@ class CoCreateSendGrid {
       case 'domainAuthenticate':
         await this.authenticateDomain(socket, type, params);
         break;
-        
+
       case 'domainValidate':
         await this.domainValidate(socket, type, params);
         break;
-        
+
       case 'sendDNSEmail':
         await this.sendDNSEmail(socket, type, params);
         break;
@@ -107,20 +105,20 @@ class CoCreateSendGrid {
 
   async sendEmail(socket, type, params) {
     try {
-      const { to, from , subject, html } = params
-      console.log("Console ",typeof params['text'])
-     let text=(typeof params['text'] == 'undefined' ||  params['text'] == '' ) ? 'Cocreate' :  params['text'];
-		const msg = {
-		  to,
-		  from,
-		  subject,
-		  text,
-		  html,
-		};
-		console.log("msg ",msg)
-		const data = await sgMail.send(msg);
-		
-    	api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.module_id)
+      const { to, from, subject, html } = params
+      console.log("Console ", typeof params['text'])
+      let text = (typeof params['text'] == 'undefined' || params['text'] == '') ? 'Cocreate' : params['text'];
+      const msg = {
+        to,
+        from,
+        subject,
+        text,
+        html,
+      };
+      console.log("msg ", msg)
+      const data = await sgMail.send(msg);
+
+      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.module_id)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -152,7 +150,7 @@ class CoCreateSendGrid {
         domain: domain_name,
         custom_spf: false,
         default: false,
-        valid:true,
+        valid: true,
         automatic_security: true
       }, {
         "headers": {
@@ -325,20 +323,20 @@ class CoCreateSendGrid {
 
   async getEmailAddress(socket, type) {
     try {
-      const { data:userEmail } = await axios.get(`${hostName}/user/email`, {
+      const { data: userEmail } = await axios.get(`${hostName}/user/email`, {
         "headers": {
           "authorization": this.apiKey,
           "Content-Type": "application/json"
         }
       })
-        const { data } = await axios.get(`${hostName}/verified_senders`, {
+      const { data } = await axios.get(`${hostName}/verified_senders`, {
         "headers": {
           "authorization": this.apiKey,
           "Content-Type": "application/json"
         }
       })
       const resposne = {
-        data:  { "userEmail"  :userEmail.email,	"results" : data.results },
+        data: { "userEmail": userEmail.email, "results": data.results },
         object: "list"
       }
       api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.module_id)
@@ -351,19 +349,19 @@ class CoCreateSendGrid {
   async domainValidate(socket, type, params) {
     try {
       const { id_domain } = params
-      const { data } = await axios.post(`${hostName}/whitelabel/domains/${id_domain}/validate`,{}, {
+      const { data } = await axios.post(`${hostName}/whitelabel/domains/${id_domain}/validate`, {}, {
         "headers": {
           "authorization": this.apiKey,
         }
       })
-      
+
       api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.module_id)
 
     } catch (error) {
       this.handleError(socket, type, error)
     }
   }
-  
+
   handleError(socket, type, error) {
     console.log(error)
     const response = {
@@ -372,7 +370,7 @@ class CoCreateSendGrid {
     };
     api.send_response(this.wsManager, socket, { type, response }, this.module_id);
   }
-  
+
 }
 
 module.exports = CoCreateSendGrid;
