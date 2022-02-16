@@ -8,7 +8,7 @@ const hostName = "https://api.sendgrid.com/v3";
 class CoCreateSendGrid {
   constructor(wsManager) {
     this.wsManager = wsManager;
-    this.module_id = "sendgrid";
+    this.moduleName = "sendgrid";
     this.enviroment = 'test';
     this.init();
     this.apiKey = null;
@@ -17,7 +17,7 @@ class CoCreateSendGrid {
 
   init() {
     if (this.wsManager) {
-      this.wsManager.on(this.module_id, (socket, data, roomInfo) => this.sendSendGrid(socket, data, roomInfo));
+      this.wsManager.on(this.moduleName, (socket, data, roomInfo) => this.sendSendGrid(socket, data, roomInfo));
     }
   }
 
@@ -25,18 +25,18 @@ class CoCreateSendGrid {
     console.log("Data sengrid ", data)
     const type = data['type'];
     let params = data['data'];
-    const module_id = this.module_id;
+    const moduleName = this.moduleName;
 
     // connect api
     try {
       let enviroment = typeof params['enviroment'] != 'undefined' ? params['enviroment'] : this.enviroment;
-      let org = await api.getOrg(params, this.module_id);
-      this.apiKey = org['apis.' + this.module_id + '.' + enviroment + '.apiKey'];
-      this.apiKeyMail = org['apis.' + this.module_id + '.' + enviroment + '.apiKeyMail'];
+      let org = await api.getOrg(params, this.moduleName);
+      this.apiKey = org['apis.' + this.moduleName + '.' + enviroment + '.apiKey'];
+      this.apiKeyMail = org['apis.' + this.moduleName + '.' + enviroment + '.apiKeyMail'];
       if(this.apiKeyMail)
         sgMail.setApiKey(this.apiKeyMail);
     } catch (e) {
-      console.log(this.module_id + " : Error Connect to api", e)
+      console.log(this.moduleName + " : Error Connect to api", e)
       return false;
     }
 
@@ -118,7 +118,7 @@ class CoCreateSendGrid {
       console.log("msg ", msg)
       const data = await sgMail.send(msg);
 
-      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -136,7 +136,7 @@ class CoCreateSendGrid {
         data: data,
         object: "list"
       }
-      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -157,7 +157,7 @@ class CoCreateSendGrid {
           "authorization": this.apiKey,
         }
       })
-      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -176,7 +176,7 @@ class CoCreateSendGrid {
           "authorization": this.apiKey,
         }
       })
-      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -196,7 +196,7 @@ class CoCreateSendGrid {
           "authorization": this.apiKey,
         }
       })
-      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -214,7 +214,7 @@ class CoCreateSendGrid {
         data: data,
         object: "list"
       }
-      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -232,7 +232,7 @@ class CoCreateSendGrid {
         data: data,
         object: "list"
       }
-      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -262,7 +262,7 @@ class CoCreateSendGrid {
           "Content-Type": "application/json"
         }
       })
-      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -280,7 +280,7 @@ class CoCreateSendGrid {
         data: data,
         object: "list"
       }
-      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -298,7 +298,7 @@ class CoCreateSendGrid {
         data: data,
         object: "list"
       }
-      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -314,7 +314,7 @@ class CoCreateSendGrid {
           "Content-Type": "application/json"
         }
       })
-      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -339,7 +339,7 @@ class CoCreateSendGrid {
         data: { "userEmail": userEmail.email, "results": data.results },
         object: "list"
       }
-      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": resposne }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -355,7 +355,7 @@ class CoCreateSendGrid {
         }
       })
 
-      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.module_id)
+      api.send_response(this.wsManager, socket, { "type": type, "response": data }, this.moduleName)
 
     } catch (error) {
       this.handleError(socket, type, error)
@@ -368,7 +368,7 @@ class CoCreateSendGrid {
       'object': 'error',
       'data': error.response || error.response.data || error.response.body || error.message || error,
     };
-    api.send_response(this.wsManager, socket, { type, response }, this.module_id);
+    api.send_response(this.wsManager, socket, { type, response }, this.moduleName);
   }
 
 }
