@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.58...v1.2.0) (2022-02-16)
+
+
+### Bug Fixes
+
+* update dependencies ([5423470](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/5423470218f293f15e9b4335762eea6cbf208c0c))
+* update param name org_row to org ([44f83ea](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/44f83ea83e13fa506f4e80c57f1492d61eb3cf37))
+
+
+### Features
+
+* define request and response functions, if functions are not deifne defualt functions exist that will request and render results. Reduced and improved code quality ([16e8caf](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/16e8cafd8297f8a64286407d2a019da7e0e61f3d))
+
 ## [1.1.58](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.57...v1.1.58) (2022-02-10)
 
 
