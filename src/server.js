@@ -22,7 +22,7 @@ class CoCreateSendGrid {
 
   async sendSendGrid(socket, data, roomInfo) {
 		let params = data['data'];
-    let type = data['type'];
+    let action = data['action'];
 		let environment;
 
     try{
@@ -31,11 +31,11 @@ class CoCreateSendGrid {
         environment = params['environment'];
         delete params['environment'];  
       } else {
-        environment = org['apis.' + this.moduleName + '.environment'];
+        environment = org.apis[this.moduleName].environment;
       }
 
-      this.apiKey = org['apis.' + this.moduleName + '.' + enviroment + '.apiKey'];
-      this.apiKeyMail = org['apis.' + this.moduleName + '.' + enviroment + '.apiKeyMail'];
+      this.apiKey = org.apis[this.moduleName][environment].apiKey;
+      this.apiKeyMail = org.apis[this.moduleName][environment].apiKeyMail;
       if(this.apiKeyMail)
         sgMail.setApiKey(this.apiKeyMail);
     } catch (e) {
@@ -43,83 +43,82 @@ class CoCreateSendGrid {
       return false;
     }
 
-    let response;
     try{
-      switch (type) {
+      let response;
+      switch (action) {
         case 'sendEmail':
-          response = await this.sendEmail(socket, type, params);
+          response = await this.sendEmail(socket, action, params);
           break;
 
         case 'domainList':
-          response = await this.getDomainList(socket, type, params);
+          response = await this.getDomainList(socket, action, params);
           break;
 
         case 'domainAuthenticate':
-          response = await this.authenticateDomain(socket, type, params);
+          response = await this.authenticateDomain(socket, action, params);
           break;
 
         case 'domainValidate':
-          response = await this.domainValidate(socket, type, params);
+          response = await this.domainValidate(socket, action, params);
           break;
 
         case 'sendDNSEmail':
-          response = await this.sendDNSEmail(socket, type, params);
+          response = await this.sendDNSEmail(socket, action, params);
           break;
 
         case 'getSubUsersList':
-          response = await this.getSubUsersList(socket, type, params);
+          response = await this.getSubUsersList(socket, action, params);
           break;
 
         case 'postSubUser':
-          response = await this.postSubUser(socket, type, params);
+          response = await this.postSubUser(socket, action, params);
           break;
 
         case 'postSubUser':
-          response = await this.postSubUser(socket, type, params);
+          response = await this.postSubUser(socket, action, params);
           break;
 
         case 'getMarketingContacts':
-          response = await this.getMarketingContacts(socket, type, params);
+          response = await this.getMarketingContacts(socket, action, params);
           break;
 
         case 'postMarketingContact':
-          response = await this.postMarketingContact(socket, type, params);
+          response = await this.postMarketingContact(socket, action, params);
           break;
 
         case 'getMarketingStats':
-          response = await this.getMarketingStats(socket, type, params);
+          response = await this.getMarketingStats(socket, action, params);
           break;
 
         case 'getMarketingSinglesends':
-          response = await this.getMarketingSinglesends(socket, type, params);
+          response = await this.getMarketingSinglesends(socket, action, params);
           break;
 
         case 'EmailValidation':
-          response = await this.EmailValidation(socket, type, params);
+          response = await this.EmailValidation(socket, action, params);
           break;
 
         case 'getEmailAddress':
-          response = await this.getEmailAddress(socket, type, params);
+          response = await this.getEmailAddress(socket, action, params);
           break;
 
       }
-      this.wsManager.send(socket, this.moduleName, { type, response })
+      this.wsManager.send(socket, this.moduleName, { action, response })
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  handleError(socket, type, error) {
+  handleError(socket, action, error) {
     const response = {
       'object': 'error',
       'data': error || error.response || error.response.data || error.response.body || error.message || error,
     };
-    this.wsManager.send(socket, this.moduleName, { type, response })
+    this.wsManager.send(socket, this.moduleName, { action, response })
   }	
 
-  async sendEmail(socket, type, params) {
-    try {
+  async sendEmail(params) {
       const { to, from, subject, html } = params
       console.log("Console ", typeof params['text'])
       let text = (typeof params['text'] == 'undefined' || params['text'] == '') ? 'Cocreate' : params['text'];
@@ -131,30 +130,20 @@ class CoCreateSendGrid {
         html,
       };
       console.log("msg ", msg)
-      const data = await sgMail.send(msg);
-
-      return data;
-
-    } catch (error) {
-      this.handleError(socket, type, error)
-    }
+      const response = await sgMail.send(msg);
+      return response;
   }
 
-  async getDomainList(socket, type, params) {
-    try {
-      const data = await axios.get(`${hostName}/whitelabel/domains`, {
-        "headers": {
-          "authorization": this.apiKey,
-        }
-      })
-      return data;
-
-    } catch (error) {
-      this.handleError(socket, type, error)
-    }
+  async getDomainList() {
+    const response = await axios.get(`${hostName}/whitelabel/domains`, {
+      "headers": {
+        "authorization": this.apiKey,
+      }
+    })
+    return response;
   }
 
-  async authenticateDomain(socket, type, params) {
+  async authenticateDomain(socket, action, params) {
     try {
       const { domain_name } = params
       const data = await axios.post(`${hostName}/whitelabel/domains`, {
@@ -171,11 +160,11 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  async sendDNSEmail(socket, type, params) {
+  async sendDNSEmail(socket, action, params) {
     try {
       const { link_id, domain_id, email } = params
       const data = await axios.post(`${hostName}/whitelabel/dns/email`, {
@@ -190,11 +179,11 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  async postSubUser(socket, type, params) {
+  async postSubUser(socket, action, params) {
     try {
       const { username, email, password, ips } = params
       const data = await axios.post(`${hostName}/subusers`, {
@@ -210,11 +199,11 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  async getSubUsersList(socket, type) {
+  async getSubUsersList(socket, action) {
     try {
       const data = await axios.get(`${hostName}/subusers`, {
         "headers": {
@@ -224,11 +213,11 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  async getMarketingContacts(socket, type) {
+  async getMarketingContacts(socket, action) {
     try {
       const data = await axios.get(`${hostName}/marketing/contacts`, {
         "headers": {
@@ -238,11 +227,11 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  async postMarketingContact(socket, type, params) {
+  async postMarketingContact(socket, action, params) {
     try {
       const { email, first_name, last_name, city, country, postal_code, address_line_1 } = params
       const data = await axios.put(`${hostName}/marketing/contacts`, {
@@ -268,11 +257,11 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  async getMarketingStats(socket, type) {
+  async getMarketingStats(socket, action) {
     try {
       const data = await axios.get(`${hostName}/marketing/stats/automations`, {
         "headers": {
@@ -286,11 +275,11 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  async getMarketingSinglesends(socket, type) {
+  async getMarketingSinglesends(socket, action) {
     try {
       const data = await axios.get(`${hostName}/marketing/stats/singlesends`, {
         "headers": {
@@ -304,11 +293,11 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  async EmailValidation(socket, type, params) {
+  async EmailValidation(socket, action, params) {
     try {
       const { email } = params
       const data = await axios.post(`${hostName}/validations/email`, { email }, {
@@ -320,11 +309,11 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  async getEmailAddress(socket, type) {
+  async getEmailAddress(socket, action) {
     try {
       const { data: userEmail } = await axios.get(`${hostName}/user/email`, {
         "headers": {
@@ -345,11 +334,11 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
-  async domainValidate(socket, type, params) {
+  async domainValidate(socket, action, params) {
     try {
       const { id_domain } = params
       const data = await axios.post(`${hostName}/whitelabel/domains/${id_domain}/validate`, {}, {
@@ -361,7 +350,7 @@ class CoCreateSendGrid {
       return data;
 
     } catch (error) {
-      this.handleError(socket, type, error)
+      this.handleError(socket, action, error)
     }
   }
 
