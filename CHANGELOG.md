@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.2.0...v1.2.1) (2022-02-24)
+
+
+### Bug Fixes
+
+* CoCreate.config replace CoCreate.app with * ([2511b66](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/2511b663ed96f1ec68d9abdb0fb0d64c137b5295))
+* get environemt and keys using dot notation ([2460909](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/246090923c8f4af30c05fd8d6bdafa8550682802))
+* remove this.enviroment = 'test'; ([adbb092](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/adbb092193f54a6a21d7b9dd4110341dce827b1c))
+
 # [1.2.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.1.58...v1.2.0) (2022-02-16)
 
 
