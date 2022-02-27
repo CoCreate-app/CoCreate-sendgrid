@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.2.1...v1.2.2) (2022-02-27)
+
+
+### Bug Fixes
+
+* update param  module to component ([0c2ecff](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/0c2ecff748e128998b51cc5479d98ba3e55bc990))
+
 ## [1.2.1](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.2.0...v1.2.1) (2022-02-24)
 
 
