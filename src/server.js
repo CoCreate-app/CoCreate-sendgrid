@@ -8,7 +8,7 @@ const hostName = "https://api.sendgrid.com/v3";
 class CoCreateSendGrid {
   constructor(wsManager) {
     this.wsManager = wsManager;
-    this.moduleName = "sendgrid";
+    this.name = "sendgrid";
     this.init();
     this.apiKey = null;
     this.apiKeyMail = null;
@@ -16,7 +16,7 @@ class CoCreateSendGrid {
 
   init() {
     if (this.wsManager) {
-      this.wsManager.on(this.moduleName, (socket, data, roomInfo) => this.sendSendGrid(socket, data, roomInfo));
+      this.wsManager.on(this.name, (socket, data, roomInfo) => this.sendSendGrid(socket, data, roomInfo));
     }
   }
 
@@ -26,20 +26,20 @@ class CoCreateSendGrid {
 		let environment;
 
     try{
-      let org = await api.getOrg(data, this.moduleName);
+      let org = await api.getOrg(data, this.name);
       if (params.environment){
         environment = params['environment'];
         delete params['environment'];  
       } else {
-        environment = org.apis[this.moduleName].environment;
+        environment = org.apis[this.name].environment;
       }
 
-      this.apiKey = org.apis[this.moduleName][environment].apiKey;
-      this.apiKeyMail = org.apis[this.moduleName][environment].apiKeyMail;
+      this.apiKey = org.apis[this.name][environment].apiKey;
+      this.apiKeyMail = org.apis[this.name][environment].apiKeyMail;
       if(this.apiKeyMail)
         sgMail.setApiKey(this.apiKeyMail);
     } catch (e) {
-      console.log(this.moduleName + " : Error Connect to api", e)
+      console.log(this.name + " : Error Connect to api", e)
       return false;
     }
 
@@ -103,7 +103,7 @@ class CoCreateSendGrid {
           break;
 
       }
-      this.wsManager.send(socket, this.moduleName, { action, response })
+      this.wsManager.send(socket, this.name, { action, response })
 
     } catch (error) {
       this.handleError(socket, action, error)
@@ -115,7 +115,7 @@ class CoCreateSendGrid {
       'object': 'error',
       'data': error || error.response || error.response.data || error.response.body || error.message || error,
     };
-    this.wsManager.send(socket, this.moduleName, { action, response })
+    this.wsManager.send(socket, this.name, { action, response })
   }	
 
   async sendEmail(params) {

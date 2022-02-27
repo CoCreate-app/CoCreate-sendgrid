@@ -21,7 +21,7 @@ const CoCreateSendGrid = {
 
 api.init({
 	name: CoCreateSendGrid.name, 
-	module:	CoCreateSendGrid
+	component:	CoCreateSendGrid
 });
 
 export default CoCreateSendGrid;
