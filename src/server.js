@@ -16,11 +16,11 @@ class CoCreateSendGrid {
 
   init() {
     if (this.wsManager) {
-      this.wsManager.on(this.name, (socket, data, roomInfo) => this.sendSendGrid(socket, data, roomInfo));
+      this.wsManager.on(this.name, (socket, data, socketInfo) => this.sendSendGrid(socket, data, socketInfo));
     }
   }
 
-  async sendSendGrid(socket, data, roomInfo) {
+  async sendSendGrid(socket, data, socketInfo) {
 		let params = data['data'];
     let action = data['action'];
 		let environment;
