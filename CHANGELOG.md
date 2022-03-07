@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.2.2...v1.2.3) (2022-03-07)
+
+
+### Bug Fixes
+
+* update param roomInfo to socketInfo ([093a1d1](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/093a1d1c3f919f92c860431d4258b30e1d5e2c55))
+
 ## [1.2.2](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.2.1...v1.2.2) (2022-02-27)
 
 
