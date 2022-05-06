@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.2.3...v1.2.4) (2022-05-06)
+
+
+### Bug Fixes
+
+* update config organization_Id to organization_id ([a318131](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/a3181311927bb5a56277a06ffe466962c947cd36))
+
 ## [1.2.3](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.2.2...v1.2.3) (2022-03-07)
 
 
