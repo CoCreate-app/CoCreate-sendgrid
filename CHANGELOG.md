@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.2.9...v1.3.0) (2022-09-28)
+
+
+### Features
+
+* config is accessible from socket.config ([3e9d732](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/3e9d732c76dc6c9174cc34afa13825f0cd992372))
+
 ## [1.2.9](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.2.8...v1.2.9) (2022-09-01)
 
 
