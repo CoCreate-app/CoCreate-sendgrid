@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.0...v1.3.1) (2022-09-29)
+
+
+### Bug Fixes
+
+* config renameed to CoCreateConfig ([c38bc68](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/c38bc6850006b9e8c52a8680532b5c3b4ff8421c))
+
 # [1.3.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.2.9...v1.3.0) (2022-09-28)
 
 
