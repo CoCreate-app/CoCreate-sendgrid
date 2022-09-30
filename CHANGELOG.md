@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.3...v1.3.4) (2022-09-30)
+
+
+### Bug Fixes
+
+* bump [@cocreate](https://github.com/cocreate) dependencies ([ddeec29](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/ddeec29e1725eb7ae4529d4012c637b1265ea144))
+
 ## [1.3.3](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.2...v1.3.3) (2022-09-30)
 
 
