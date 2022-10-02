@@ -1,3 +1,10 @@
+## [1.3.8](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.7...v1.3.8) (2022-10-02)
+
+
+### Bug Fixes
+
+* bump @cocreate/hosting and @cocreate/socket-client ([16b1f9f](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/16b1f9f83f68290057cc7c737e6cdd23fbe8d6b2))
+
 ## [1.3.7](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.6...v1.3.7) (2022-10-01)
 
 
