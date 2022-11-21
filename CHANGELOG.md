@@ -1,3 +1,10 @@
+## [1.3.12](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.11...v1.3.12) (2022-11-21)
+
+
+### Bug Fixes
+
+* replaced document_id with document._id ([489d2e3](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/489d2e3407d330a104369d362561097d50407ebb))
+
 ## [1.3.11](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.10...v1.3.11) (2022-11-21)
 
 
