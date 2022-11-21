@@ -10,7 +10,7 @@ module.exports = {
             "collection": "files",
             "document_id": "6029a260e979fb17407e25cd",
             "key": "src",
-            "data":{
+            "document": {
                 "name": "index.html",
                 "path": "/docs/sendgrid/index.html",
                 "domains": [
