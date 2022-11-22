@@ -1,3 +1,11 @@
+## [1.3.14](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.13...v1.3.14) (2022-11-22)
+
+
+### Bug Fixes
+
+* apply src: {{source}} to CoCreate.config ([e8e1771](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/e8e17716f60f87e899f4916cb30e71ad06f2b2ca))
+* workflow docs ([f9948cb](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/f9948cbebcc6953f0f009059a0396a90118c8776))
+
 ## [1.3.13](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.12...v1.3.13) (2022-11-21)
 
 
