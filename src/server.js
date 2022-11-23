@@ -36,7 +36,7 @@ class CoCreateSendGrid {
 
       this.apiKey = org.apis[this.name][environment].apiKey;
       this.apiKeyMail = org.apis[this.name][environment].apiKeyMail;
-      if(this.apiKeyMail)
+      if (this.apiKeyMail)
         sgMail.setApiKey(this.apiKeyMail);
     } catch (e) {
       console.log(this.name + " : Error Connect to api", e)
