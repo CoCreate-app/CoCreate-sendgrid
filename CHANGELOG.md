@@ -1,3 +1,10 @@
+## [1.3.32](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.31...v1.3.32) (2022-12-15)
+
+
+### Bug Fixes
+
+* add missing dev dependency style-loader ([55b6b8d](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/55b6b8d5acc33f1db8342eb3a5603d56b8fd0bac))
+
 ## [1.3.31](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.30...v1.3.31) (2022-12-13)
 
 
