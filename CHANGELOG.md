@@ -1,3 +1,10 @@
+## [1.3.41](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.40...v1.3.41) (2022-12-30)
+
+
+### Bug Fixes
+
+* update config sources to use template  braces with entry on src ([2093f4a](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/2093f4a499bb80a325f11e64dbbcd0c364e07183))
+
 ## [1.3.40](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.39...v1.3.40) (2022-12-29)
 
 
