@@ -1,3 +1,10 @@
+## [1.3.43](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.42...v1.3.43) (2023-01-01)
+
+
+### Bug Fixes
+
+* docs sanbox overflow ([8fe02e5](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/8fe02e53b3d56904eda9ba999181d0da19199801))
+
 ## [1.3.42](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.41...v1.3.42) (2022-12-31)
 
 
