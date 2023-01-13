@@ -1,3 +1,10 @@
+## [1.3.48](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.47...v1.3.48) (2023-01-13)
+
+
+### Bug Fixes
+
+* bump dependencies ([e23a13f](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/e23a13fa529c1c109e73d20a98d5c2e8a02b8b57))
+
 ## [1.3.47](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.46...v1.3.47) (2023-01-10)
 
 
