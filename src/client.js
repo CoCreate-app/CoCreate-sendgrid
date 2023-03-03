@@ -2,7 +2,7 @@ import api from '@cocreate/api'
 
 const CoCreateSendGrid = {
 	name: 'sendgrid',
-	actions: {
+	endPoints: {
 		domainList: {},
 		domainAuthenticate: {},
 		sendDNSEmail: {},
