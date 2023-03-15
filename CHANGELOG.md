@@ -1,3 +1,10 @@
+## [1.3.55](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.54...v1.3.55) (2023-03-15)
+
+
+### Bug Fixes
+
+* actions object renamed to endPoints ([ace70ec](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/ace70ecfe94d50393b6385263b7856bab0120b08))
+
 ## [1.3.54](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.53...v1.3.54) (2023-02-01)
 
 
