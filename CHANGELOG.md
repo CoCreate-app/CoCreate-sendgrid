@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.55...v1.4.0) (2023-03-16)
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events ([4b1edd1](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/4b1edd1075724527013b9986f23a76bdc5183607))
+
 ## [1.3.55](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.3.54...v1.3.55) (2023-03-15)
 
 
