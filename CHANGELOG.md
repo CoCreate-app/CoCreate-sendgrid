@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.4.2...v1.4.3) (2023-04-11)
+
+
+### Bug Fixes
+
+* renamed domains to hosts ([a0b4085](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/a0b40850d31377e5a0e42d24cf7e834b01fd991e))
+
 ## [1.4.2](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.4.1...v1.4.2) (2023-03-30)
 
 
