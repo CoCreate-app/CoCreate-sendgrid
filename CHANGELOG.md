@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.0...v1.5.1) (2023-04-24)
+
+
+### Bug Fixes
+
+* removed uglifyjs-webpack-plugin ([cfa3f43](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/cfa3f43f8dc1fc40c5b099fdfc93bb2b7b5255b8))
+
 # [1.5.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.4.5...v1.5.0) (2023-04-24)
 
 
