@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.4.5...v1.5.0) (2023-04-24)
+
+
+### Features
+
+* added pwa manifest ([6bb2f64](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/6bb2f6408824141e4a58c51409e833df5db477bb))
+
 ## [1.4.5](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.4.4...v1.4.5) (2023-04-11)
 
 
