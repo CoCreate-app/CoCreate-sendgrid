@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.3...v1.5.4) (2023-04-24)
+
+
+### Bug Fixes
+
+* updated worrkflows to v3 and node version 16 ([6c8f6d8](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/6c8f6d8be01dbcf88710b743ab783f3ccbbf8746))
+
 ## [1.5.3](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.2...v1.5.3) (2023-04-24)
 
 
