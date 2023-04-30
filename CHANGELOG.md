@@ -1,3 +1,12 @@
+## [1.5.5](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.4...v1.5.5) (2023-04-30)
+
+
+### Bug Fixes
+
+* fullscreen target updated to fullscreen fullscreen-target ([1ed7692](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/1ed7692a1c8b6b1743693e5bfb021a85cc467ef6))
+* package-lock.json and pnpm-lock.yaml added to .gitignore ([c919b81](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/c919b8161785eb4758c43168704e7fd7c14c7633))
+* removed toogle fullscreen icons. now using css content ([79b1d14](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/79b1d1474201807a67887893e6994f7ade4f8ca4))
+
 ## [1.5.4](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.3...v1.5.4) (2023-04-24)
 
 
