@@ -1,3 +1,10 @@
+## [1.5.6](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.5...v1.5.6) (2023-05-01)
+
+
+### Bug Fixes
+
+* replace fontawesome with svg ([c3268f2](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/c3268f2fd54291fe1c0399ee9cfcf90dd449ebe4))
+
 ## [1.5.5](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.4...v1.5.5) (2023-04-30)
 
 
