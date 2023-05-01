@@ -1,3 +1,10 @@
+## [1.5.7](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.6...v1.5.7) (2023-05-01)
+
+
+### Bug Fixes
+
+* update manifest.json to manifest.webmanifest ([cce8999](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/cce89991b8bdcc4b6c5262f674b41c5f80ad37cc))
+
 ## [1.5.6](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.5...v1.5.6) (2023-05-01)
 
 
