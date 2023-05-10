@@ -1,3 +1,10 @@
+## [1.5.9](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.8...v1.5.9) (2023-05-10)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([341c51f](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/341c51f65194c9e5b2adcc998a1ffa75aadbfe16))
+
 ## [1.5.8](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.7...v1.5.8) (2023-05-06)
 
 
