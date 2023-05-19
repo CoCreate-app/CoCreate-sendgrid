@@ -1,3 +1,10 @@
+## [1.5.10](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.9...v1.5.10) (2023-05-19)
+
+
+### Bug Fixes
+
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([7ada5e1](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/7ada5e1a688eb099a4012cb0c831cbf72c29b1f7))
+
 ## [1.5.9](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.8...v1.5.9) (2023-05-10)
 
 
