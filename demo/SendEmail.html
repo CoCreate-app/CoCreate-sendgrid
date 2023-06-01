@@ -1,76 +1,93 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>SendGrid</title>
 
-<head>
-  <title>SendGrid</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
 
-  <style type="text/css">
-    .template {
-      display: none
-    }
+            form.form > div > label {
+                margin-right: 35px;
+            }
+            form.form > div {
+                margin: 29px;
+            }
 
+            .btnsubmit {
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: "Cookie", cursive;
+                cursor: pointer;
+            }
+        </style>
 
-    form.form > div > label {
-        margin-right: 35px;
-    }
-    form.form > div {
-        margin: 29px;
-    }
-    
-    .btnsubmit {
-      border-radius: 10px;
-      font-size: 18px;
-      font-family: 'Cookie', cursive;
-      cursor: pointer;
-    }
-  </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>SendGrid Send Email</h1>
 
-<body>
+        <form class="form">
+            <div>
+                <label>to email :-</label>
+                <input
+                    type="email"
+                    placeholder="to email"
+                    sendgrid="sendEmail.to" />
+            </div>
 
-  <h1>SendGrid Send Email</h1>
+            <div>
+                <label>from email :-</label>
+                <input
+                    autocomplete="false"
+                    type="email"
+                    placeholder="from email"
+                    sendgrid="sendEmail.from"
+                    value="testing@cocreate.app" />
+            </div>
 
-  <form class="form">
-         <div>
-              <label>to email :-</label>
-              <input type="email" placeholder="to email" sendgrid="sendEmail.to">
-         </div>
-      
-        <div>
-            <label>from email :-</label>
-            <input autocomplete="false" type="email" placeholder="from email" sendgrid="sendEmail.from" value="testing@cocreate.app">
+            <div>
+                <label>subject :-</label>
+                <input
+                    type="text"
+                    placeholder="subject"
+                    sendgrid="sendEmail.subject" />
+            </div>
+
+            <div>
+                <label>html :-</label>
+                <textarea
+                    type="textarea"
+                    placeholder="html"
+                    sendgrid="sendEmail.html"></textarea>
+            </div>
+
+            <div>
+                <label>text :-</label>
+                <input
+                    type="text"
+                    placeholder="text"
+                    sendgrid="sendEmail.text" />
+            </div>
+
+            <button class="btnsubmit" actions="sendEmail">
+                SendGrid Send Email
+            </button>
+        </form>
+
+        <div template_id="sendEmail">
+            <div
+                class="template"
+                value="{{data.result.id}}"
+                render-array="data.result">
+                <h1>mail send sucess</h1>
+                <hr />
+            </div>
         </div>
-        
-        <div>
-            <label>subject :-</label>
-            <input type="text" placeholder="subject" sendgrid="sendEmail.subject">
-        </div>
-        
-        <div>
-          <label>html :-</label>
-        <textarea type="textarea" placeholder="html" sendgrid="sendEmail.html"></textarea/>
-        </div>
-        
-        <div>
-            <label>text :-</label>
-            <input type="text" placeholder="text" sendgrid="sendEmail.text">
-        </div>
-        
-        <button class="btnsubmit" actions='sendEmail'>SendGrid Send Email</button>
-  </form>
 
-  <div template_id="sendEmail">
-    <div class="template" value="{{data.result.id}}" render-array="data.result">
-        <h1>mail send sucess</h1>
-      <hr />
-    </div>
-  </div>
-
-  <!--CoCreateJS-->
-  <script src="../dist/CoCreate-sendgrid.js"></script>
-
-</body>
-
+        <!--CoCreateJS-->
+        <script src="../dist/CoCreate-sendgrid.js"></script>
+    </body>
 </html>

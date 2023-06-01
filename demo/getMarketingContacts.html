@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>SendGrid</title>
 
-<head>
-  <title>SendGrid</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
 
-  <style type="text/css">
-    .template {
-      display: none
-    }
+            .display-block {
+                display: flex;
+                align-items: center;
+                flex-flow: row wrap;
+            }
 
-    .display-block {
-      display: flex;
-      align-items: center;
-      flex-flow: row wrap;
-    }
+            .display-block > * {
+                margin: 8px;
+                align-items: center;
+            }
 
-    .display-block> * {
-      margin: 8px;
-      align-items: center;
-    }
+            .btnsubmit {
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: "Cookie", cursive;
+                cursor: pointer;
+            }
+        </style>
 
-    .btnsubmit {
-      border-radius: 10px;
-      font-size: 18px;
-      font-family: 'Cookie', cursive;
-      cursor: pointer;
-    }
-  </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>Get Marketing Contacts</h1>
 
-<body>
+        <form>
+            <button class="btnsubmit" actions="getMarketingContacts">
+                Get Marketing Contacts
+            </button>
+        </form>
 
-  <h1>Get Marketing Contacts </h1>
+        <div template_id="getMarketingContacts">
+            <h4>Authenticated Domain List :-</h4>
+            <div
+                class="template"
+                value="{{data.result.id}}"
+                render-array="data.result">
+                <div class="display-block">
+                    email : -
+                    <h4 value="{{data.result.email}}"></h4>
+                    id :-
+                    <h4 value="{{data.result.id}}"></h4>
+                    address_line_1 : -
+                    <h4 value="{{data.result.address_line_1}}"></h4>
+                    city : -
+                    <h4 value="{{data.result.city}}"></h4>
+                    first_name : -
+                    <h4 value="{{data.result.first_name}}"></h4>
+                    last_name : -
+                    <h4 value="{{data.result.last_name}}"></h4>
+                    updated_at : -
+                    <h4 value="{{data.result.updated_at}}"></h4>
+                </div>
+                <hr />
+            </div>
+        </div>
 
-  <form>
-    <button class="btnsubmit" actions='getMarketingContacts'>Get Marketing Contacts</button>
-  </form>
+        <!--CoCreateJS-->
+        <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
-  <div template_id="getMarketingContacts">
-    <h4>Authenticated Domain List :- </h4>
-    <div class="template" value="{{data.result.id}}" render-array="data.result">
-      <div class="display-block">
-          email : - <h4 value="{{data.result.email}}"></h4>
-          id :- <h4 value={{data.result.id}}></h4>
-          address_line_1 : - <h4 value="{{data.result.address_line_1}}"></h4>
-          city : - <h4 value="{{data.result.city}}"></h4>
-          first_name : - <h4 value="{{data.result.first_name}}"></h4>
-          last_name : - <h4 value="{{data.result.last_name}}"></h4>
-          updated_at : - <h4 value="{{data.result.updated_at}}"></h4>
-      </div>
-      <hr />
-    </div>
-  </div>
+        <!--CoCreate Plugins-->
 
-
-
-
-  <!--CoCreateJS-->
-  <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-
-  <!--CoCreate Plugins-->
-  
-  <script src="../dist/CoCreate-sendgrid.js"></script>
-
-</body>
-
+        <script src="../dist/CoCreate-sendgrid.js"></script>
+    </body>
 </html>

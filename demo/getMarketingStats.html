@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>SendGrid</title>
 
-<head>
-  <title>SendGrid</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
 
-  <style type="text/css">
-    .template {
-      display: none
-    }
+            .display-block {
+                display: flex;
+                align-items: center;
+                flex-flow: row wrap;
+            }
 
-    .display-block {
-      display: flex;
-      align-items: center;
-      flex-flow: row wrap;
-    }
+            .display-block > * {
+                margin: 8px;
+                align-items: center;
+            }
 
-    .display-block> * {
-      margin: 8px;
-      align-items: center;
-    }
+            .btnsubmit {
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: "Cookie", cursive;
+                cursor: pointer;
+            }
+        </style>
 
-    .btnsubmit {
-      border-radius: 10px;
-      font-size: 18px;
-      font-family: 'Cookie', cursive;
-      cursor: pointer;
-    }
-  </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>Get Marketing Stats</h1>
 
-<body>
+        <form>
+            <button class="btnsubmit" actions="getMarketingStats">
+                Get Marketing Stats
+            </button>
+        </form>
 
-  <h1>Get Marketing Stats </h1>
+        <div template_id="getMarketingStats">
+            <h4>Authenticated Domain List :-</h4>
+            <div
+                class="template"
+                value="{{data.results.id}}"
+                render-array="data.results">
+                <div class="display-block">
+                    id :-
+                    <h4 value="{{data.results.id}}"></h4>
+                    requests : -
+                    <h4 value="{{data.results.stats.requests}}"></h4>
+                    bounce_drops : -
+                    <h4 value="{{data.results.stats.bounce_drops}}"></h4>
+                    bounces : -
+                    <h4 value="{{data.results.stats.bounces}}"></h4>
+                    clicks : -
+                    <h4 value="{{data.results.stats.clicks}}"></h4>
+                    delivered : -
+                    <h4 value="{{data.results.stats.delivered}}"></h4>
+                    invalid_emails : -
+                    <h4 value="{{data.results.stats.invalid_emails}}"></h4>
+                    opens : -
+                    <h4 value="{{data.results.stats.opens}}"></h4>
+                    spam_reports : -
+                    <h4 value="{{data.results.stats.spam_reports}}"></h4>
+                    spam_report_drops : -
+                    <h4 value="{{data.results.stats.spam_report_drops}}"></h4>
+                </div>
+                <hr />
+            </div>
+        </div>
 
-  <form>
-    <button class="btnsubmit" actions='getMarketingStats'>Get Marketing Stats</button>
-  </form>
+        <!--CoCreateJS-->
+        <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
-  <div template_id="getMarketingStats">
-    <h4>Authenticated Domain List :- </h4>
-    <div class="template" value="{{data.results.id}}" render-array="data.results">
-      <div class="display-block">
-          id :- <h4 value={{data.results.id}}></h4>
-          requests : - <h4 value="{{data.results.stats.requests}}"></h4>
-          bounce_drops : - <h4 value="{{data.results.stats.bounce_drops}}"></h4>
-          bounces : - <h4 value="{{data.results.stats.bounces}}"></h4>
-          clicks : - <h4 value="{{data.results.stats.clicks}}"></h4>       
-          delivered : - <h4 value="{{data.results.stats.delivered}}"></h4>     
-          invalid_emails : - <h4 value="{{data.results.stats.invalid_emails}}"></h4>     
-          opens : - <h4 value="{{data.results.stats.opens}}"></h4>
-          spam_reports : - <h4 value="{{data.results.stats.spam_reports}}"></h4>
-          spam_report_drops : - <h4 value="{{data.results.stats.spam_report_drops}}"></h4>
-      </div>
-      <hr />
-    </div>
-  </div>
+        <!--CoCreate Plugins-->
 
-
-
-
-  <!--CoCreateJS-->
-  <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-
-  <!--CoCreate Plugins-->
-  
-  <script src="../dist/CoCreate-sendgrid.js"></script>
-
-</body>
-
+        <script src="../dist/CoCreate-sendgrid.js"></script>
+    </body>
 </html>

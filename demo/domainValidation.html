@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Validate Domain</title>
 
-<head>
-  <title>Validate Domain</title>
+        <style type="text/css">
+            .template {
+                display: block;
+            }
+        </style>
 
-  <style type="text/css">
-    .template {
-      display: block
-    }
-  </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>domainValidation</h1>
 
-<body>
+        <form>
+            <input
+                sendgrid="domainValidate.id_domain"
+                placeholder="id Domain" />
+            <button actions="domainValidate">Validate Domain</button>
+        </form>
 
-  <h1>domainValidation</h1>
+        <!--CoCreateJS-->
+        <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
-  <form>
-    <input sendgrid="domainValidate.id_domain" placeholder="id Domain">
-    <button actions='domainValidate'>Validate Domain</button>
-  </form>
-  
-  <!--CoCreateJS-->
-  <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-  
-  <script src="../dist/CoCreate-sendgrid.js"></script>
-</body>
-
+        <script src="../dist/CoCreate-sendgrid.js"></script>
+    </body>
 </html>

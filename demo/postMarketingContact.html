@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Authenticate Domain</title>
 
-<head>
-  <title>Authenticate Domain</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+        </style>
 
-  <style type="text/css">
-    .template {
-      display: none
-    }
-  </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>Marketing Campaign Contact</h1>
 
-<body>
+        <form>
+            <!-- email, first_name, last_name, city, country, postal_code, address_line_1  -->
+            <input placeholder="email" sendgrid="postMarketingContact.email" />
+            <input
+                placeholder="first_name"
+                sendgrid="postMarketingContact.first_name" />
+            <input
+                placeholder="last_name"
+                sendgrid="postMarketingContact.last_name" />
+            <input
+                placeholder="address_line_1"
+                sendgrid="postMarketingContact.address_line_1" />
+            <input placeholder="city" sendgrid="postMarketingContact.city" />
+            <input
+                placeholder="country"
+                sendgrid="postMarketingContact.country" />
+            <input
+                placeholder="postal_code"
+                sendgrid="postMarketingContact.postal_code" />
 
-  <h1> Marketing Campaign Contact </h1>
+            <button actions="postMarketingContact">
+                post Marketing Campaign Contact
+            </button>
+        </form>
 
-  <form>
-    <!-- email, first_name, last_name, city, country, postal_code, address_line_1  -->
-    <input placeholder="email" sendgrid="postMarketingContact.email">
-    <input placeholder="first_name" sendgrid="postMarketingContact.first_name">
-    <input placeholder="last_name" sendgrid="postMarketingContact.last_name">
-    <input placeholder="address_line_1" sendgrid="postMarketingContact.address_line_1">
-    <input placeholder="city" sendgrid="postMarketingContact.city">
-    <input placeholder="country" sendgrid="postMarketingContact.country">
-    <input placeholder="postal_code" sendgrid="postMarketingContact.postal_code">
+        <!--CoCreateJS-->
+        <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
-    <button actions='postMarketingContact'>post Marketing Campaign Contact</button>
-  </form>
-
-  <!--CoCreateJS-->
-  <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-  
-  <script src="../dist/CoCreate-sendgrid.js"></script>
-</body>
-
+        <script src="../dist/CoCreate-sendgrid.js"></script>
+    </body>
 </html>

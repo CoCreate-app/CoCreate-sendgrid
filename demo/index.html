@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>SendGrig</title>
 
-<head>
-    <title>SendGrig</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
 
-    <style type="text/css">
-        .template {
-            display: none
-        }
+            .list {
+                display: inline-grid;
+                grid-gap: 30px;
+                margin: 30px 50px;
+            }
 
-        .list {
-            display: inline-grid;
-            grid-gap: 30px;
-            margin: 30px 50px;
-        }
+            .list > li {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-        .list>li {
-            text-decoration: underline;
-            cursor: pointer;
-        }
-    </style>
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>List of API - SendGrid</h1>
 
-<body>
-
-    <h1>List of API - SendGrid</h1>
-
-    <div>
         <ul class="list">
-            <li onclick="navigate('DomainAuthentication')">Go to SendGrid Domain Authentication</li>
-            <li onclick="navigate('GetAuthorizedDomain')">Go to SendGrid Get Authorized Domain</li>
+            <li onclick="navigate('DomainAuthentication')">
+                Go to SendGrid Domain Authentication
+            </li>
+            <li onclick="navigate('GetAuthorizedDomain')">
+                Go to SendGrid Get Authorized Domain
+            </li>
             <li onclick="navigate('SendEmail')">Go to SendGrid Send Email</li>
-            <li onclick="navigate('EmailValidation')">Go to SendGrid  Email Validation</li>
-            <li onclick="navigate('getEmailAddress')">Go to SendGrid Get Email Address</li>
+            <li onclick="navigate('EmailValidation')">
+                Go to SendGrid Email Validation
+            </li>
+            <li onclick="navigate('getEmailAddress')">
+                Go to SendGrid Get Email Address
+            </li>
             <li onclick="navigate('SubUsers')">Go to SendGrid Sub Users</li>
-            <li onclick="navigate('PostSubuser')">Go to SendGrid Post Sub User</li>
-            <li onclick="navigate('getMarketingContacts')">Go to SendGrid Get Marketing Contacts</li>
-            <li onclick="navigate('postMarketingContact')">Go to SendGrid Post Marketing Contact</li>
-            <li onclick="navigate('getMarketingStats')">Go to SendGrid Get Marketing Stats</li>
-            <li onclick="navigate('getMarketingSinglesends')">Go to Get Marketing Single Sends</li>
-            
-    </div>
+            <li onclick="navigate('PostSubuser')">
+                Go to SendGrid Post Sub User
+            </li>
+            <li onclick="navigate('getMarketingContacts')">
+                Go to SendGrid Get Marketing Contacts
+            </li>
+            <li onclick="navigate('postMarketingContact')">
+                Go to SendGrid Post Marketing Contact
+            </li>
+            <li onclick="navigate('getMarketingStats')">
+                Go to SendGrid Get Marketing Stats
+            </li>
+            <li onclick="navigate('getMarketingSinglesends')">
+                Go to Get Marketing Single Sends
+            </li>
+        </ul>
+    </body>
 
-</body>
+    <script>
+        function navigate(name) {
+            window.location.href = `../demo/${name}.html`;
+        }
+    </script>
 
-
-<script>
-
-    function navigate(name) {
-        window.location.href = `../demo/${name}.html`;
-    }
-
-</script>
-
-<!--CoCreateJS-->
-<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-<!-- <script src="../dist/CoCreate-sendgrid.js"></script> -->
-
-
+    <!--CoCreateJS-->
+    <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+    <!-- <script src="../dist/CoCreate-sendgrid.js"></script> -->
 </html>

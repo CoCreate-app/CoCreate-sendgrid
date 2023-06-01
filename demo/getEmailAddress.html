@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>SendGrid</title>
 
-<head>
-  <title>SendGrid</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
 
-  <style type="text/css">
-    .template {
-      display: none
-    }
+            .btnsubmit {
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: "Cookie", cursive;
+                cursor: pointer;
+            }
 
-    .btnsubmit {
-      border-radius: 10px;
-      font-size: 18px;
-      font-family: 'Cookie', cursive;
-      cursor: pointer;
-    }
-        
-    .display-block {
-      display: flex;
-      align-items: center;
-      flex-flow: row wrap;
-    }
+            .display-block {
+                display: flex;
+                align-items: center;
+                flex-flow: row wrap;
+            }
 
-    .display-block>div {
-      margin: 8px;
-      display: inline-flex;
-      order: 5;
-      align-items: center;
-    }
-  </style>
+            .display-block > div {
+                margin: 8px;
+                display: inline-flex;
+                order: 5;
+                align-items: center;
+            }
+        </style>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-<body>
+    <body>
+        <h1>Get Email Address</h1>
 
-  <h1>Get Email Address</h1>
+        <form>
+            <button class="btnsubmit" actions="getEmailAddress">
+                Get Email Address
+            </button>
+        </form>
 
-  <form>
-    <button class="btnsubmit" actions='getEmailAddress'>Get Email Address</button>
-  </form>
-
-  <div template_id="getEmailAddress">
-    <h4>Authenticated Domain List :- </h4>
-      userEmail: - <h3 value="{{data.userEmail}}"></h3>
-     <div class="template" value="{{data.id}}" render-array="data.results">
-      <div class="display-block">
-        <div>
-          from_email : - <h3 value="{{data.results.from_email}}"></h3>
+        <div template_id="getEmailAddress">
+            <h4>Authenticated Domain List :-</h4>
+            userEmail: -
+            <h3 value="{{data.userEmail}}"></h3>
+            <div
+                class="template"
+                value="{{data.id}}"
+                render-array="data.results">
+                <div class="display-block">
+                    <div>
+                        from_email : -
+                        <h3 value="{{data.results.from_email}}"></h3>
+                    </div>
+                    <div>
+                        from_name : -
+                        <h4 value="{{data.results.from_name}}"></h4>
+                    </div>
+                    <div>
+                        verified : -
+                        <h4 value="{{data.results.verified}}"></h4>
+                    </div>
+                    <div>
+                        reply_to : -
+                        <h4 value="{{data.results.reply_to}}"></h4>
+                    </div>
+                </div>
+                <hr />
+            </div>
         </div>
-        <div>
-          from_name : - <h4 value="{{data.results.from_name}}"></h4>
-        </div>
-        <div>
-          verified : - <h4 value="{{data.results.verified}}"></h4>
-        </div>
-        <div>
-          reply_to : - <h4 value="{{data.results.reply_to}}"></h4>
-        </div>
-        
-      </div>
-      <hr />
-    </div>
-  </div>
 
-
-  <!--CoCreateJS-->
-  <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-  <!-- <script src="../dist/CoCreate-sendgrid.js"></script> -->
-
-</body>
-
+        <!--CoCreateJS-->
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+        <!-- <script src="../dist/CoCreate-sendgrid.js"></script> -->
+    </body>
 </html>

@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Authenticate Domain</title>
 
-<head>
-    <title>Authenticate Domain</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
+        </style>
 
-    <style type="text/css">
-        .template {
-            display: none
-        }
-    </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>Authenticated Domain</h1>
 
-<body>
+        <form>
+            <input placeholder="username" sendgrid="postSubUser.username" />
+            <input placeholder="email" sendgrid="postSubUser.email" />
+            <input placeholder="password" sendgrid="postSubUser.password" />
+            <input placeholder="ips" sendgrid="postSubUser.ips" />
+            <button actions="postSubUser">Add Sub User</button>
+        </form>
 
-    <h1>Authenticated Domain</h1>
+        <!--CoCreateJS-->
+        <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
-    <form >
-        <input placeholder="username" sendgrid="postSubUser.username">
-        <input placeholder="email" sendgrid="postSubUser.email">
-        <input placeholder="password" sendgrid="postSubUser.password">
-        <input placeholder="ips" sendgrid="postSubUser.ips">
-        <button actions='postSubUser'>Add Sub User</button>
-    </form>
-
-  <!--CoCreateJS-->
-  <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-  
-  <script src="../dist/CoCreate-sendgrid.js"></script>
-</body>
-
+        <script src="../dist/CoCreate-sendgrid.js"></script>
+    </body>
 </html>

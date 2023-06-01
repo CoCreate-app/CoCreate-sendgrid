@@ -1,95 +1,116 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>SendGrid</title>
 
-<head>
-    <title>SendGrid</title>
+        <style type="text/css">
+            .template {
+                display: none;
+            }
 
-    <style type="text/css">
-        .template {
-            display: none
-        }
+            .display-block {
+                display: flex;
+                align-items: center;
+                flex-flow: row wrap;
+            }
 
-        .display-block {
-            display: flex;
-            align-items: center;
-            flex-flow: row wrap;
-        }
+            .display-block > div {
+                margin: 8px;
+                display: inline-flex;
+                order: 5;
+                align-items: center;
+            }
 
-        .display-block>div {
-            margin: 8px;
-            display: inline-flex;
-            order: 5;
-            align-items: center;
-        }
+            .input_width {
+                width: 15%;
+                margin: 0px 10px;
+            }
 
-        .input_width {
-            width: 15%;
-            margin: 0px 10px;
-        }
+            .btnsubmit {
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: "Cookie", cursive;
+                cursor: pointer;
+            }
+        </style>
 
-        .btnsubmit {
-            border-radius: 10px;
-            font-size: 18px;
-            font-family: 'Cookie', cursive;
-            cursor: pointer;
-        }
-    </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>SendGrig Sub Users</h1>
 
-<body>
+        <form>
+            <button class="btnsubmit" actions="getSubUsersList">
+                Get Sub Users list
+            </button>
+        </form>
 
-    <h1>SendGrig Sub Users</h1>
+        <div template_id="sendgridDomainList">
+            <h4>Authenticated Domain List :-</h4>
+            <div class="template" value="{{data.id}}" render-array="data">
+                <div class="display-block">
+                    <div>
+                        name : -
+                        <h3 value="{{data.domain}}"></h3>
+                    </div>
+                    <div>
+                        username : -
+                        <h4 value="{{data.username}}"></h4>
+                    </div>
+                    <div>
+                        subdomain : -
+                        <h4 value="{{data.subdomain}}"></h4>
+                    </div>
 
-    <form>
-        <button class="btnsubmit" actions='getSubUsersList'>Get Sub Users list</button>
-    </form>
-
-    <div template_id="sendgridDomainList">
-        <h4>Authenticated Domain List :- </h4>
-        <div class="template" value="{{data.id}}" render-array="data">
-            <div class="display-block">
-                <div>
-                    name : - <h3 value="{{data.domain}}"></h3>
+                    <div style="flex: 1 100%">
+                        <label value="type :- {{data.dns.dkim1.type}}"
+                            >type</label
+                        >
+                        <label style="margin-left: 10px">dkim1 host: -</label>
+                        <input
+                            class="input_width"
+                            value="{{data.dns.dkim1.host}}" />
+                        <label>dkim1 data: -</label>
+                        <input
+                            class="input_width"
+                            value="{{data.dns.dkim1.data}}" />
+                    </div>
+                    <div style="flex: 1 100%">
+                        <label value="type :- {{data.dns.dkim2.type}}"
+                            >type</label
+                        >
+                        <label style="margin-left: 10px">dkim2 host: -</label>
+                        <input
+                            class="input_width"
+                            value="{{data.dns.dkim2.host}}" />
+                        <label>dkim2 data: -</label>
+                        <input
+                            class="input_width"
+                            value="{{data.dns.dkim2.data}}" />
+                    </div>
+                    <div style="flex: 1 100%">
+                        <label value="type :- {{data.dns.mail_cname.type}}"
+                            >type</label
+                        >
+                        <label style="margin-left: 10px"
+                            >mail_cname host: -</label
+                        >
+                        <input
+                            class="input_width"
+                            value="{{data.dns.mail_cname.host}}" />
+                        <label>mail_cname data: -</label>
+                        <input
+                            class="input_width"
+                            value="{{data.dns.mail_cname.data}}" />
+                    </div>
                 </div>
-                <div>
-                    username : - <h4 value="{{data.username}}"></h4>
-                </div>
-                <div>
-                    subdomain : - <h4 value="{{data.subdomain}}"></h4>
-                </div>
-
-                <div style="flex: 1 100%;">
-                    <label value="type :- {{data.dns.dkim1.type}}">type</label>
-                    <label style="margin-left: 10px;">dkim1 host: -</label>
-                    <input class="input_width" value="{{data.dns.dkim1.host}}" />
-                    <label>dkim1 data: -</label>
-                    <input class="input_width" value="{{data.dns.dkim1.data}}" />
-                </div>
-                <div style="flex: 1 100%;">
-                    <label value="type :- {{data.dns.dkim2.type}}">type</label>
-                    <label style="margin-left: 10px;">dkim2 host: -</label>
-                    <input class="input_width" value="{{data.dns.dkim2.host}}" />
-                    <label>dkim2 data: -</label>
-                    <input class="input_width" value="{{data.dns.dkim2.data}}" />
-                </div>
-                <div style="flex: 1 100%;">
-                    <label value="type :- {{data.dns.mail_cname.type}}">type</label>
-                    <label style="margin-left: 10px;">mail_cname host: -</label>
-                    <input class="input_width" value="{{data.dns.mail_cname.host}}" />
-                    <label>mail_cname data: -</label>
-                    <input class="input_width" value="{{data.dns.mail_cname.data}}" />
-                </div>
+                <hr />
             </div>
-            <hr />
         </div>
-    </div>
 
-    <!--CoCreateJS-->
-    <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-    <!-- <script src="../dist/CoCreate-sendgrid.js"></script> -->
-
-</body>
-
+        <!--CoCreateJS-->
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+        <!-- <script src="../dist/CoCreate-sendgrid.js"></script> -->
+    </body>
 </html>

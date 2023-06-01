@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Authenticate Domain</title>
 
-<head>
-  <title>Authenticate Domain</title>
+        <style type="text/css">
+            .template {
+                display: block;
+            }
+        </style>
 
-  <style type="text/css">
-    .template {
-      display: block
-    }
-  </style>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
+    <body>
+        <h1>domainAuthentication</h1>
 
-<body>
+        <form>
+            <input sendgrid="domainAuthenticate.domain_name" />
+            <button actions="domainAuthenticate">do</button>
+        </form>
 
-  <h1>domainAuthentication</h1>
+        <div template_id="domainAuthenticate">
+            <h4>List recordings:-</h4>
+            <div
+                class="template margin:10px;"
+                value="{{data.id}}"
+                render-array="data">
+                <li>subdomain <span value="{{data.subdomain}}"></span></li>
 
-  <form>
-    <input sendgrid="domainAuthenticate.domain_name">
-    <button actions='domainAuthenticate'>do</button>
-  </form>
-  
-  <div template_id="domainAuthenticate">
-          <h4>List recordings:- </h4>
-          <div class="template margin:10px;"   value="{{data.id}}" render-array="data" >
-            <li > subdomain <span  value="{{data.subdomain}}" ></span></li>
-            
-            DKIM1
-            <ul>
-              <li > <span  value="{{data.dns.dkim1.data}}" ></span></li>
-              <li > <span  value="{{data.dns.dkim1.host}}" ></span></li>
-              <li > <span  value="{{data.dns.dkim1.type}}" ></span></li>
-            </ul>
-            DKIM2
-            <ul>
-              <li > <span  value="{{data.dns.dkim2.data}}" ></span></li>
-              <li > <span  value="{{data.dns.dkim2.host}}" ></span></li>
-              <li > <span  value="{{data.dns.dkim2.type}}" ></span></li>
-            </ul>
-            mail_cname
-            <ul>
-              <li > <span  value="{{data.dns.mail_cname.data}}" ></span></li>
-              <li > <span  value="{{data.dns.mail_cname.host}}" ></span></li>
-              <li > <span  value="{{data.dns.mail_cname.type}}" ></span></li>
-            </ul>
-            ID Domain
-            <ul>
-              <li > <span  value="{{data.id}}" ></span></li>
-            </ul>
-          </div>
-  </div>
+                DKIM1
+                <ul>
+                    <li><span value="{{data.dns.dkim1.data}}"></span></li>
+                    <li><span value="{{data.dns.dkim1.host}}"></span></li>
+                    <li><span value="{{data.dns.dkim1.type}}"></span></li>
+                </ul>
+                DKIM2
+                <ul>
+                    <li><span value="{{data.dns.dkim2.data}}"></span></li>
+                    <li><span value="{{data.dns.dkim2.host}}"></span></li>
+                    <li><span value="{{data.dns.dkim2.type}}"></span></li>
+                </ul>
+                mail_cname
+                <ul>
+                    <li><span value="{{data.dns.mail_cname.data}}"></span></li>
+                    <li><span value="{{data.dns.mail_cname.host}}"></span></li>
+                    <li><span value="{{data.dns.mail_cname.type}}"></span></li>
+                </ul>
+                ID Domain
+                <ul>
+                    <li><span value="{{data.id}}"></span></li>
+                </ul>
+            </div>
+        </div>
 
-  <!--CoCreateJS-->
-  <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
-  
-  <script src="../dist/CoCreate-sendgrid.js"></script>
-</body>
+        <!--CoCreateJS-->
+        <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>-->
 
+        <script src="../dist/CoCreate-sendgrid.js"></script>
+    </body>
 </html>
