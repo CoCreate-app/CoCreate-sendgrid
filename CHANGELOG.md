@@ -1,3 +1,10 @@
+## [1.5.12](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.11...v1.5.12) (2023-06-02)
+
+
+### Bug Fixes
+
+* format demo html ([1665448](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/1665448ac6246e3676c93f414346ca49112b5c5a))
+
 ## [1.5.11](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.10...v1.5.11) (2023-05-21)
 
 
