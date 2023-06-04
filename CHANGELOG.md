@@ -1,3 +1,11 @@
+## [1.5.14](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.13...v1.5.14) (2023-06-04)
+
+
+### Bug Fixes
+
+* replaced secert GITHUB_TOKEN with GITHUB ([1ce1f7e](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/1ce1f7eda8ed5d53c17fdf18859dff936031b070))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([d221845](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/d2218451dd728aa438aedddf5309b08f80a4fb44))
+
 ## [1.5.13](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.12...v1.5.13) (2023-06-04)
 
 
