@@ -1,3 +1,10 @@
+## [1.5.15](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.14...v1.5.15) (2023-06-04)
+
+
+### Bug Fixes
+
+* Refactor CoCreate.config.js to remove hard-coded credentials ([c21cb6d](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/c21cb6d7aac45a25ffd0270df69e078f204942d8))
+
 ## [1.5.14](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.13...v1.5.14) (2023-06-04)
 
 
