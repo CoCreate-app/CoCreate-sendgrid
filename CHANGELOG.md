@@ -1,3 +1,10 @@
+## [1.5.26](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.25...v1.5.26) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([c674445](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/c6744459049620fd39aa313a2f4e43bfabe0ebb0))
+
 ## [1.5.25](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.24...v1.5.25) (2023-06-11)
 
 
