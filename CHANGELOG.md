@@ -1,3 +1,10 @@
+## [1.5.18](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.17...v1.5.18) (2023-06-11)
+
+
+### Bug Fixes
+
+* renamed hosts to host. the value can be a string or an array of strings ([19ec680](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/19ec68098a523636be318acf5bb6cb095b5cd4c1))
+
 ## [1.5.17](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.16...v1.5.17) (2023-06-10)
 
 
