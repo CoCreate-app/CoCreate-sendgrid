@@ -1,3 +1,10 @@
+## [1.5.21](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.20...v1.5.21) (2023-06-11)
+
+
+### Bug Fixes
+
+* postintall error ([966c8eb](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/966c8ebdca48fb92e7bb9804848257e7b2ea0a24))
+
 ## [1.5.20](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.19...v1.5.20) (2023-06-11)
 
 
