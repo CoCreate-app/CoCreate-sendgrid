@@ -1,3 +1,10 @@
+## [1.5.20](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.19...v1.5.20) (2023-06-11)
+
+
+### Bug Fixes
+
+* @cocreate/cli moved to dependencies ([9449fa3](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/9449fa3b8f81341c59b919a79f873b3e44f053e6))
+
 ## [1.5.19](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.18...v1.5.19) (2023-06-11)
 
 
