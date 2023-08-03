@@ -4,8 +4,8 @@ module.exports = {
     "host": "",
     "sources": [
         {
-            "collection": "files",
-            "document": {
+            "array": "files",
+            "object": {
                 "_id": "6029a260e979fb17407e25cd",
                 "name": "index.html",
                 "path": "/docs/sendgrid/index.html",
