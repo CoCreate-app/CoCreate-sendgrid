@@ -1,3 +1,18 @@
+# [1.6.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.29...v1.6.0) (2023-08-16)
+
+
+### Bug Fixes
+
+* crud attributes renamed ([848099e](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/848099eec9c355f30e7727c34714108ef8f2dd7d))
+* render-array and render-object attributes renamed to render ([8e838d0](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/8e838d02cf84694a0c55fd3f836cbae0365910de))
+* replace -target -selector ([882def1](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/882def131fb9d60a25393155841fc8d2aae68699))
+* webpack.config and package.json make use of mode=production instead of process.env ([87cfba6](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/87cfba657f4f1d83994076034cb6ccea19b26828))
+
+
+### Features
+
+* name attribute and variable renamed to key ([90121c2](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/90121c2571147618bf53d562e49f533c1f7beaa7))
+
 ## [1.5.29](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.5.28...v1.5.29) (2023-06-14)
 
 
