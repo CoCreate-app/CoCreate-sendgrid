@@ -1,3 +1,12 @@
+## [1.7.1](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.7.0...v1.7.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* /dist/CoCreate.js updated to https://CoCreate.app/dist/CoCreate.js ([2fd1875](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/2fd1875bdb0b29c9c2bdd44ad2205fdfb1297c61))
+* replace cdn with /dist ([ab3627e](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/ab3627e58c2dd82c285baf4477849e16a81d86f1))
+* update file uploader ([cc303e3](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/cc303e3238fa387cd40b9f948bebe7e15bcafaeb))
+
 # [1.7.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.6.0...v1.7.0) (2023-08-17)
 
 
