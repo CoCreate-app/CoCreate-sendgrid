@@ -1,3 +1,11 @@
+## [1.8.2](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.8.1...v1.8.2) (2023-09-18)
+
+
+### Bug Fixes
+
+*  Add path and pathname ([8a92a17](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/8a92a172e64398c039e447a46f1c890e736a64f7))
+* Update CoCreate depndencies to latest versions ([9d8db8c](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/9d8db8ca1f3c32eb4eecc0dd57776700aa4e1402))
+
 ## [1.8.1](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.8.0...v1.8.1) (2023-08-21)
 
 
