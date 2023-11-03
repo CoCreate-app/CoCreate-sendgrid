@@ -58,7 +58,7 @@
     "webpack-log": "^3.0.1"
   },
   "dependencies": {
-    "@cocreate/api": "^1.15.8",
+    "@cocreate/api": "^1.15.9",
     "@sendgrid/mail": "^7.4.2"
   }
 }
