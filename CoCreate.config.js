@@ -12,8 +12,7 @@ module.exports = {
                 "pathname": "/docs/sendgrid/index.html",
                 "src": "{{./docs/index.html}}",
                 "host": [
-                    "*",
-                    "general.cocreate.app"
+                    "*"
                 ],
                 "directory": "sendgrid",
                 "content-type": "{{content-type}}",
