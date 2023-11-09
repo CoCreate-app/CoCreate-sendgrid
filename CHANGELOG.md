@@ -1,3 +1,11 @@
+## [1.9.6](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.9.5...v1.9.6) (2023-11-09)
+
+
+### Bug Fixes
+
+* meta name typo ([fc3b284](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/fc3b284095da8aba66dd10de372727698dc6ac0e))
+* update host ([2e0234b](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/2e0234b1569ef2c8c09983278cb37e4fc3635d1b))
+
 ## [1.9.5](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.9.4...v1.9.5) (2023-11-03)
 
 
