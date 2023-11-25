@@ -1,3 +1,15 @@
+# [1.11.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.10.0...v1.11.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* update nav, edit button and css path ([a322bea](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/a322bea52ef83dfdbdf473dbc66bf21a7b18db0c))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([c0403bf](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/c0403bfdc367a4e1341ed5e9a3c88cb14233f6ee))
+
 # [1.10.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.9.7...v1.10.0) (2023-11-19)
 
 
