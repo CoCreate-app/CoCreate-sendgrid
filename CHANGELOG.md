@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.12.0...v1.12.1) (2023-12-09)
+
+
+### Bug Fixes
+
+* getOrg() renamed to getOrganization() ([24424bc](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/24424bc375c1e172ebc29d54506c0dce1dba4d37))
+
 # [1.12.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.11.0...v1.12.0) (2023-11-25)
 
 
