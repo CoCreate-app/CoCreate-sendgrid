@@ -1,5 +1,4 @@
 'use strict';
-const api = require('@cocreate/api');
 const axios = require("axios").default;
 const sgMail = require('@sendgrid/mail');
 
