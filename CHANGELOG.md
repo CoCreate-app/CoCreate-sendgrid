@@ -1,3 +1,10 @@
+## [1.12.3](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.12.2...v1.12.3) (2024-02-03)
+
+
+### Bug Fixes
+
+*  removed from clinet.js ([132c821](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/132c821adbe90f0ab45a6d877c7ca9185981380b))
+
 ## [1.12.2](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.12.1...v1.12.2) (2024-01-30)
 
 
