@@ -1,3 +1,10 @@
+## [1.12.4](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.12.3...v1.12.4) (2024-02-05)
+
+
+### Bug Fixes
+
+* Removed https://cdn.cocreate.app/latest/CoCreate.min.css ([0032723](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/00327238687a1604b63716565d486135a390f573))
+
 ## [1.12.3](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.12.2...v1.12.3) (2024-02-03)
 
 
