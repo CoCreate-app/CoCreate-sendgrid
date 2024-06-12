@@ -1,3 +1,11 @@
+## [1.12.6](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.12.5...v1.12.6) (2024-06-12)
+
+
+### Bug Fixes
+
+* bump cocreate dependencies ([b7b674a](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/b7b674af5ec16a1b6a967124e8d8cf706a3f8391))
+* svg icon class ([94b2165](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/94b216529965717440a4ba2277e570676e2564d9))
+
 ## [1.12.5](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.12.4...v1.12.5) (2024-04-29)
 
 
