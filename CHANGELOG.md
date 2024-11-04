@@ -1,3 +1,16 @@
+# [1.13.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.12.6...v1.13.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* pretier.config.js and file formating ([58dd8d3](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/58dd8d32d691efc91f0a8a8a07c43897d4801500))
+
+
+### Features
+
+* add prettier.config.js and format files ([f7c0cef](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/f7c0cef83e0e88e64aeeccc62f222cae1d403b9a))
+* add prettier.config.js and format files ([ed6c13b](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/ed6c13bab90ca46d25f2360167b98ff711416508))
+
 ## [1.12.6](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.12.5...v1.12.6) (2024-06-12)
 
 
