@@ -1,3 +1,13 @@
+## [1.13.1](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.13.0...v1.13.1) (2025-04-30)
+
+
+### Bug Fixes
+
+* added css-loader ([8fdf6fa](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/8fdf6fa52cbda6bce443a12e838239cc857c7dd1))
+* update query attributes ([7af37ac](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/7af37ac63b60bf6e626c9118d10e81191b7631d6))
+* updated cocreate modules versions ([474884e](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/474884ea2f0f5e1c3569564066a6dbc8baf089a7))
+* webpack.config and devdependencies ([516308c](https://github.com/CoCreate-app/CoCreate-sendgrid/commit/516308c8c751d5f268c9d5dfc52cbe35b976dca1))
+
 # [1.13.0](https://github.com/CoCreate-app/CoCreate-sendgrid/compare/v1.12.6...v1.13.0) (2024-11-04)
 
 
